@@ -1,0 +1,452 @@
+<!-- Kaibo Huang -->
+<!--Date: 2024/06/03 -->
+<!-- HTML File for Sources Webpage
+
+Challenge Features: 
+- Utlize Javascript for some meaningful purpose (for the timeline)
+- Include an element that moves down as the user scrolls down
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags for character encoding, viewport settings, and IE compatibility -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Link to external CSS file for styling -->
+  <link rel="stylesheet" href="Webpage_Style.css">
+
+  <!-- Title of the webpage -->
+  <title>Careers In Computing</title>
+
+  <!-- Link to external JavaScript library (Chart.js) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+  <!-- Internal CSS for additional styling -->
+  <style>
+    body {
+      color: white;
+      /* Text color */
+      display: flex;
+      /* Flexbox layout for body */
+      flex-direction: column;
+      /* Column layout */
+      align-items: center;
+      /* Center align items horizontally */
+    }
+
+    nav {
+      order: -1;
+      /* Display navigation bar before other elements */
+    }
+
+    a {
+      color: lightblue;
+      /* Link color */
+      text-decoration: none;
+      /* Remove underline from links */
+    }
+
+    header {
+      font-size: 36px;
+      /* Font size for headers */
+      color: white;
+      /* Header text color */
+      margin-top: 100px;
+      /* Margin from the top */
+    }
+
+    .content {
+      display: flex;
+      /* Flexbox layout for content */
+    }
+
+    ul {
+      margin: 0;
+      /* Remove default margin */
+      padding: 0;
+      /* Remove default padding */
+      list-style: none;
+      /* Remove default list style */
+    }
+
+    ul:nth-of-type(1) {
+      margin-right: 50px;
+      /* Margin for the first unordered list */
+    }
+
+    li {
+      margin-bottom: 10px;
+      /* Margin between list items */
+    }
+
+    strong {
+      color: white;
+      /* Bold text color */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav>
+    <div class="logo">
+      <!-- Link to the homepage -->
+      <h4><a href="index.html">Careers in Computing</a></h4>
+    </div>
+    <!-- Navigation links -->
+    <ul class="nav-links">
+      <li style="margin-right: 40px">
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="ComputerScience.html">Computer Science</a>
+      </li>
+      <li>
+        <a href="ComputerEngineering.html">Computer Engineering</a>
+      </li>
+      <li>
+        <a href="InformationTechnology.html">Information Technology</a>
+      </li>
+      <li style="margin: 0 10px;">
+        <a href="Sources.html">Sources</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Home Page section -->
+  <header>Home Page:</header>
+  <div class="content">
+    <ul>
+      <li>
+        <!-- Link to Steve Jobs biography -->
+        <strong>Steve Jobs:</strong> <a href="https://www.biography.com/business-leaders/steve-jobs">Biography - Steve
+          Jobs</a>
+      </li>
+      <li>
+        <!-- Link to job growth article -->
+        <strong>Job Growth:</strong> <a
+          href="https://www2.deloitte.com/us/en/insights/economy/spotlight/tech-workforce-expanding.html">Tech Workforce
+          Expansion</a>
+      </li>
+      <li>
+        <!-- Link to JamHacks website -->
+        <strong>JamHacks:</strong> <a href="https://www.jamhacks.ca/">JamHacks Website</a>
+      </li>
+      <li>
+        <!-- Link to Hack The North information -->
+        <strong>Hack The North:</strong> <a href="https://hackthenorth.medium.com/about">About Hack The North</a>
+      </li>
+      <li>
+        <!-- Link to UofTHacks11 website -->
+        <strong>UofTHacks11:</strong> <a href="https://uofthacks.com/">UofTHacks11 Website</a>
+      </li>
+      <li>
+        <!-- Link to ETHTORONTO website -->
+        <strong>ETHTORONTO:</strong> <a href="https://www.ethtoronto.ca/">ETHTORONTO Website</a>
+      </li>
+      <li>
+        <!-- Link to International Olympiad in Informatics -->
+        <strong>IOI:</strong> <a
+          href="https://en.wikipedia.org/wiki/International_Olympiad_in_Informatics">International Olympiad in
+          Informatics</a>
+      </li>
+      <li>
+        <!-- Link to Google Summer of Code -->
+        <strong>Google Summer Of Code:</strong> <a href="https://en.wikipedia.org/wiki/Google_Summer_of_Code">Google
+          Summer of Code</a>
+      </li>
+      <li>
+        <!-- Link to Waterloo CEMC on Facebook -->
+        <strong>CCC:</strong> <a href="https://www.facebook.com/WaterlooCEMC/">Waterloo CEMC on Facebook</a>
+      </li>
+      <li>
+        <!-- Link to Imagine Cup -->
+        <strong>Imagine Cup:</strong> <a href="https://www.pngegg.com/en/png-bgpsz">Imagine Cup</a>
+      </li>
+      <li>
+        <!-- Link to Discord icon -->
+        <strong>Discord:</strong> <a
+          href="https://www.freepik.com/premium-psd/discord-icon-isolated-white-background-social-media-app-round-button-logo-sign-symbol_136238448.htm">Discord
+          Icon</a>
+      </li>
+      <li>
+        <!-- Link to RBC at Quartier DIX30 -->
+        <strong>RBC:</strong> <a href="https://www.quartierdix30.com/store/rbc/?lang=en">RBC at Quartier DIX30</a>
+      </li>
+      <li>
+        <!-- Link to Nokia logo -->
+        <strong>NOKIA:</strong> <a href="https://1000logos.net/nokia-logo/">Nokia Logo</a>
+      </li>
+      <li>
+        <!-- Link to Indigo Research -->
+        <strong>Indigo Research:</strong> <a href="https://x.com/indigoresearch_">Indigo Research</a>
+      </li>
+      <li>
+        <!-- Link to Collison YouTube Channel -->
+        <strong>Collison:</strong> <a href="https://www.youtube.com/channel/UC6MiQVyK_WaFlU5IvIT2b8A">Collison YouTube
+          Channel</a>
+      </li>
+      <li>
+        <!-- Link to TechSpo Toronto 2022 -->
+        <strong>TechSpo:</strong> <a
+          href="https://volunteerkingston.com/event/techspo-toronto-2022-technology-expo-internet-mobile-adtech-martech-saas/">TechSpo
+          Toronto 2022</a>
+      </li>
+      <li>
+        <!-- Link to FITC -->
+        <strong>Fitc:</strong> <a href="https://fitc.ca/">FITC</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Computer Science section -->
+  <header>Computer Science:</header>
+  <div class="content">
+    <ul>
+      <li>
+        <!-- Link to University of Waterloo -->
+        <strong>Waterloo:</strong> <a href="https://en.wikipedia.org/wiki/University_of_Waterloo">University of
+          Waterloo</a>
+      </li>
+      <li>
+        <!-- Link to University of Toronto -->
+        <strong>U of T:</strong> <a href="https://en.wikipedia.org/wiki/University_of_Toronto">University of Toronto</a>
+      </li>
+      <li>
+        <!-- Link to University of British Columbia -->
+        <strong>UBC:</strong> <a href="https://ires.ubc.ca/ubc-logo-4/">University of British Columbia</a>
+      </li>
+      <li>
+        <!-- Link to Toronto Metropolitan University -->
+        <strong>TMU:</strong> <a href="https://www.torontomu.ca/">Toronto Metropolitan University</a>
+      </li>
+      <li>
+        <!-- Link to CS50 sticker -->
+        <strong>CS50:</strong> <a href="https://www.redbubble.com/i/sticker/CS50-by-CS50/58904158.EJUG5">CS50</a>
+      </li>
+      <li>
+        <!-- Link to freeCodeCamp YouTube channel -->
+        <strong>freeCodeCamp:</strong> <a href="https://www.youtube.com/freecodecamp">freeCodeCamp</a>
+      </li>
+      <li>
+        <!-- Link to LeetCode Visual Studio Marketplace -->
+        <strong>Leetcode:</strong> <a
+          href="https://marketplace.visualstudio.com/items?itemName=LeetCode.vscode-leetcode">LeetCode</a>
+      </li>
+      <li>
+        <!-- Link to GeeksForGeeks -->
+        <strong>GeeksForGeeks:</strong> <a href="https://m.wikidata.org/wiki/Q104673617">GeeksForGeeks</a>
+      </li>
+      <li>
+        <!-- Link to Full Stack article on Forbes -->
+        <strong>Full Stack:</strong> <a
+          href="https://www.forbes.com/sites/johnhall/2022/06/19/why-you-should-keep-these-key-online-branding-principles-in-mind/?sh=1eeb1fd271b1">Full
+          Stack Development</a>
+      </li>
+      <li>
+        <!-- Link to job description on Job Bank Canada -->
+        <strong>Job Description:</strong> <a
+          href="https://www.jobbank.gc.ca/marketreport/occupation/296123/ca;jsessionid=D2C1D09698D0B885EA97511B13461A4E.jobsearch76">Job
+          Bank Canada</a>
+        <!-- Link to full stack developer article on Coursera -->
+        <a href="https://www.coursera.org/ca/articles/full-stack-developer#">Full Stack Developer</a>
+      </li>
+      <li>
+        <!-- Link to timeline on Preplaced -->
+        <strong>Timeline:</strong> <a
+          href="https://www.preplaced.in/blog/a-day-in-the-life-of-a-full-stack-developer-at-amazon#">A Day in the
+          Life</a>
+        <!-- Link to day in life of full stack developer on UAE Salary -->
+        <a href="https://uaesalary.com/day-in-life-of-full-stack-developer">Day in the Life</a>
+        <!-- Link to YouTube video on full stack developer -->
+        <a href="https://www.youtube.com/watch?v=BNPKelgqvHI">YouTube Video</a>
+        <!-- Link to another YouTube video on full stack developer -->
+        <a href="https://www.youtube.com/watch?v=66Qj1jS4g0M">Another YouTube Video</a>
+      </li>
+      <li>
+        <!-- Link to Full Stack Developer salary on Glassdoor -->
+        <strong>CS Careers:</strong> <a
+          href="https://www.glassdoor.ca/Salaries/toronto-full-stack-developer-salary-SRCH_IL.0,7_IM976_KO8,28.htm#:~:text=Full%20Stack%20Developer%20Salaries%20in%20Toronto%2C%20ON&text=The%20average%20salary%20for%20Full,a%20range%20from%20%242%2C844%20%2D%20%249%2C973.">Full
+          Stack Developer Salary</a>
+        <!-- Link to Data Scientist salary on Glassdoor -->
+        <a href="https://www.glassdoor.ca/Salaries/toronto-data-scientist-salary-SRCH_IL.0,7_IM976_KO8,22.htm">Data
+          Scientist Salary</a>
+        <!-- Link to Machine Learning Engineer salary on Glassdoor -->
+        <a href="https://www.glassdoor.ca/Salaries/machine-learning-engineer-salary-SRCH_KO0,25.htm">Machine Learning
+          Engineer Salary</a>
+        <!-- Link to Cybersecurity Analyst salary on Glassdoor -->
+        <a href="https://www.glassdoor.ca/Salaries/cyber-security-analyst-salary-SRCH_KO0,22.htm">Cybersecurity Analyst
+          Salary</a>
+        <!-- Link to Systems Analyst salary on Glassdoor -->
+        <a href="https://www.glassdoor.ca/Salaries/systems-analyst-salary-SRCH_KO0,15.htm">Systems Analyst Salary</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Computer Engineering section -->
+  <header>Computer Engineering:</header>
+  <div class="content">
+    <ul>
+      <li>
+        <!-- Link to University of Waterloo -->
+        <strong>Waterloo:</strong> <a href="https://en.wikipedia.org/wiki/University_of_Waterloo">University of
+          Waterloo</a>
+      </li>
+      <li>
+        <!-- Link to University of Toronto -->
+        <strong>U of T:</strong> <a href="https://en.wikipedia.org/wiki/University_of_Toronto">University of Toronto</a>
+      </li>
+      <li>
+        <!-- Link to University of British Columbia -->
+        <strong>UBC:</strong> <a href="https://ires.ubc.ca/ubc-logo-4/">University of British Columbia</a>
+      </li>
+      <li>
+        <!-- Link to Toronto Metropolitan University -->
+        <strong>TMU:</strong> <a href="https://www.torontomu.ca/">Toronto Metropolitan University</a>
+      </li>
+      <li>
+        <!-- Link to Raspberry Pi -->
+        <strong>Raspberry Pi:</strong> <a
+          href="https://www.cleanpng.com/png-raspberry-pi-clip-art-sugar-logo-computer-icons-6860126/">Raspberry Pi</a>
+      </li>
+      <li>
+        <!-- Link to C++ -->
+        <strong>C++:</strong> <a href="https://www.pngwing.com/en/free-png-nwvsu">C++</a>
+      </li>
+      <li>
+        <!-- Link to Tinkercad YouTube channel -->
+        <strong>Tinkercad:</strong> <a href="https://www.youtube.com/tinkercad">Tinkercad</a>
+      </li>
+      <li>
+        <!-- Link to Python logo -->
+        <strong>Python:</strong> <a href="https://en.wikipedia.org/wiki/File:Python_logo_and_wordmark.svg">Python</a>
+      </li>
+      <li>
+        <!-- Link to job description on Achievers blog -->
+        <strong>Job Description:</strong> <a href="https://www.achievers.com/blog/employee-development/">Achievers
+          Blog</a>
+        <!-- Link to software engineer article on Coursera -->
+        <a href="https://www.coursera.org/articles/software-engineer#">Software Engineer</a>
+        <!-- Link to job description on Job Bank Canada -->
+        <a href="https://www.jobbank.gc.ca/marketreport/summary-occupation/5485/ca">Job Bank Canada</a>
+      </li>
+      <li>
+        <!-- Link to day in life of software engineer on Indeed -->
+        <strong>Timeline:</strong> <a
+          href="https://ca.indeed.com/career-advice/finding-a-job/day-in-life-of-software-engineer">Day in the Life on
+          Indeed</a>
+        <!-- Link to YouTube video on a day in life of software engineer -->
+        <a href="https://youtu.be/1LSXEC0Clow">YouTube Video</a>
+        <!-- Link to Nexus IT Group blog -->
+        <a
+          href="https://nexusitgroup.com/blog/a-day-in-the-life-of-a-software-engineer-what-to-expect#:~:text=A%20typical%20day%20in%20the,all%20systems%20are%20running%20smoothly.">Nexus
+          IT Group Blog</a>
+        <!-- Link to another YouTube video on a day in life of software engineer -->
+        <a href="https://www.youtube.com/watch?v=j1fc0FlCjyI">Another YouTube Video</a>
+      </li>
+      <li>
+        <!-- Link to Hardware Engineer salary on Glassdoor -->
+        <strong>CE Career Graph:</strong> <a
+          href="https://www.glassdoor.ca/Salaries/toronto-hardware-engineer-salary-SRCH_IL.0,7_IM976_KO8,25.htm">Hardware
+          Engineer Salary</a>
+        <!-- Link to Embedded Systems Engineer salary on Glassdoor -->
+        <a href="https://www.glassdoor.ca/Salaries/embedded-systems-engineer-salary-SRCH_KO0,25.htm">Embedded Systems
+          Engineer Salary</a>
+        <!-- Link to FPGA Engineer salary on Glassdoor -->
+        <a href="https://www.glassdoor.ca/Salaries/fpga-engineer-salary-SRCH_KO0,13.htm">FPGA Engineer Salary</a>
+        <!-- Link to VLSI Design Engineer salary on Glassdoor -->
+        <a href="https://www.glassdoor.ca/Salaries/canada-vlsi-design-engineer-salary-SRCH_IL.0,6_IN3_KO7,27.htm">VLSI
+          Design Engineer Salary</a>
+        <!-- Link to Robotics Engineer salary on Glassdoor -->
+        <a
+          href="https://www.glassdoor.ca/Salaries/toronto-robotics-engineer-salary-SRCH_IL.0,7_IM976_KO8,25.htm#:~:text=The%20average%20salary%20for%20a,engineer%20employees%20in%20Toronto%2C%20ON.">Robotics
+          Engineer Salary</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Information Technology section -->
+  <header>Information Technology:</header>
+  <div class="content">
+    <ul>
+      <li>
+        <!-- Link to CompTIA certification -->
+        <strong>CompTIA:</strong> <a
+          href="https://www.credly.com/org/comptia/badge/comptia-a-ce-certification.1">CompTIA A+ Certification</a>
+      </li>
+      <li>
+        <!-- Link to CCNA certification -->
+        <strong>CCNA:</strong> <a href="https://www.credly.com/org/cisco/badge/ccna">CCNA Certification</a>
+      </li>
+      <li>
+        <!-- Link to AWS certification -->
+        <strong>AWS:</strong> <a href="https://aws.amazon.com/certification/certified-cloud-practitioner/">AWS Cloud
+          Practitioner Certification</a>
+      </li>
+      <li>
+        <!-- Link to CISSP certification -->
+        <strong>CISSP:</strong> <a
+          href="https://www.readynez.com/en/blog/4-reasons-cissp-certification-makes-you-more-valuable/">CISSP
+          Certification</a>
+      </li>
+      <li>
+        <!-- Link to Toronto District School Board -->
+        <strong>TDSB:</strong> <a href="https://en.wikipedia.org/wiki/Toronto_District_School_Board">Toronto District
+          School Board</a>
+      </li>
+      <li>
+        <!-- Link to Specialist High Skills Major -->
+        <strong>SHSM:</strong> <a
+          href="https://notredamecollege.ca/index.php/student-services/specialist-high-skills-major">Specialist High
+          Skills Major</a>
+      </li>
+      <li>
+        <!-- Link to job description for cloud architect -->
+        <strong>Job Description:</strong> <a href="https://modeltoys.com.mt/project/our-executives/">Cloud Architect Job
+          Description</a>
+        <!-- Link to cloud architect article on TechTarget -->
+        <a
+          href="https://www.techtarget.com/searchcloudcomputing/definition/cloud-architect#:~:text=A%20cloud%20architect%20is%20an,and%20cloud%20management%20and%20monitoring.">TechTarget
+          Article</a>
+        <!-- Link to cloud architect job description on Workable -->
+        <a href="https://resources.workable.com/cloud-architect-job-description">Workable Job Description</a>
+      </li>
+      <li>
+        <!-- Link to day in life of cloud architect YouTube video -->
+        <strong>Timeline:</strong> <a href="https://www.youtube.com/watch?v=eRx6pFRwVDA">YouTube Video</a>
+        <!-- Link to another YouTube video on day in life of cloud architect -->
+        <a href="https://www.youtube.com/watch?v=Vnm3Zx5Fvgo">Another YouTube Video</a>
+        <!-- Link to Reddit post on day in life of cloud architect -->
+        <a href="https://www.reddit.com/r/aws/comments/13smz33/what_are_cloud_architects_doing_on_a_day_to_day/">Reddit
+          Post</a>
+        <!-- Link to LinkedIn post on day in life of cloud architect -->
+        <a href="https://www.linkedin.com/pulse/day-life-cloud-architect-ten-twenty-one-iv2qf">LinkedIn Post</a>
+      </li>
+      <li>
+        <!-- Link to Network Administrator salary on Glassdoor -->
+        <strong>IT Graph:</strong> <a
+          href="https://www.glassdoor.ca/Salaries/network-administrator-salary-SRCH_KO0,21.htm#:~:text=The%20average%20salary%20for%20Network,a%20range%20from%20%241%2C569%20%2D%20%246%2C244.">Network
+          Administrator Salary</a>
+        <!-- Link to Systems Administrator salary on Glassdoor -->
+        <a href="https://www.glassdoor.ca/Salaries/ontario-systems-administrator-salary-SRCH_IL.0,7_IS4080_KO8,29.htm">Systems
+          Administrator Salary</a>
+        <!-- Link to IT Support Specialist salary on Glassdoor -->
+        <a href="https://www.glassdoor.ca/Salaries/toronto-it-support-specialist-salary-SRCH_IL.0,7_IM976_KO8,29.htm">IT
+          Support Specialist Salary</a>
+        <!-- Link to Cloud Solutions Architect salary on Glassdoor -->
+        <a
+          href="https://www.glassdoor.ca/Salaries/toronto-cloud-solutions-architect-salary-SRCH_IL.0,7_IM976_KO8,33.htm#:~:text=The%20average%20salary%20for%20Cloud,a%20range%20from%20%248%2C912%20%2D%20%2431%2C847.">Cloud
+          Solutions Architect Salary</a>
+        <!-- Link to IT Project Manager salary on Glassdoor -->
+        <a href="https://www.glassdoor.ca/Salaries/toronto-product-manager-salary-SRCH_IL.0,7_IM976_KO8,23.htm">IT
+          Project Manager Salary</a>
+      </li>
+    </ul>
+  </div>
+
+</body>
+
+</html>

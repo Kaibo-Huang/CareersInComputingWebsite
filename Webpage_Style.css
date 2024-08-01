@@ -1,0 +1,806 @@
+/*Kaibo Huang
+Date: 2024/06/03
+CSS File for all webpages other than the homepage
+
+Challenge Features: 
+- Utlize Javascript for some meaningful purpose (for the timeline)
+- Include an element that moves down as the user scrolls down
+*/
+
+/* Importing the Poppins font from Google Fonts with various weights and styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Resetting margin, padding, and setting box-sizing to border-box for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Resetting margin, padding, and setting box-sizing to border-box for all elements and their pseudo-elements */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setting display to flex for elements with class .row */
+.row {
+  display: flex;
+}
+
+/* Setting display to flex and enabling flex-wrap for the second .education-info element inside .row */
+.row .education-info:nth-of-type(2) {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Adding margin to img elements inside .education-info */
+.education-info img {
+  margin: 30px;
+}
+
+/* Setting position to relative and display to inline-block for elements with class .img-container */
+.img-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Setting a background image for the body with fixed attachment */
+body {
+  background-image: url("Images/ParallaxBackground.jpg");
+  background-attachment: fixed;
+}
+
+/* Styling for the nav element */
+nav {
+  z-index: 1000;
+  /* Ensures the nav element stays on top */
+  position: fixed;
+  /* Fixes the nav element at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Makes the nav element span the full width of the viewport */
+  display: flex;
+  /* Uses flexbox for layout */
+  justify-content: space-around;
+  /* Spaces out children elements evenly */
+  align-items: center;
+  /* Aligns children elements to the center */
+  min-height: 8vh;
+  /* Sets a minimum height for the nav element */
+  background-color: #000000;
+  /* Sets the background color to black */
+  font-family: 'Poppins', sans-serif;
+  /* Applies the Poppins font */
+}
+
+/* Styling for elements with class .logo */
+.logo {
+  color: rgb(226, 226, 226);
+  /* Sets text color */
+  text-transform: uppercase;
+  /* Transforms text to uppercase */
+  letter-spacing: 5px;
+  /* Adds spacing between letters */
+  font-size: 20px;
+  /* Sets font size */
+  padding-left: 30px;
+  /* Adds padding to the left */
+}
+
+/* Inheriting color and removing text-decoration for anchor tags inside .logo */
+.logo a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Changes color to white when hovering over h4 elements inside .logo */
+.logo:hover h4 {
+  color: white;
+}
+
+/* Styling for elements with class .nav-links, setting it as a flex container */
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  /* Removes bullet points from list items */
+}
+
+/* Adds right margin to list items inside .nav-links */
+.nav-links li {
+  margin-right: 40px;
+}
+
+/* Styling for anchor tags inside .nav-links */
+.nav-links a {
+  color: rgb(226, 226, 226);
+  /* Sets text color */
+  text-decoration: none;
+  /* Removes underline from links */
+  font-weight: bold;
+  /* Makes text bold */
+  font-size: 14px;
+  /* Sets font size */
+}
+
+/* Media query for screens with a maximum width of 950px */
+@media screen and (max-width: 950px) {
+  body {
+    overflow-x: hidden;
+    /* Hides horizontal overflow */
+  }
+
+  /* Adjusting .nav-links for smaller screens */
+  .nav-links {
+    position: absolute;
+    /* Positions .nav-links absolutely */
+    right: 0;
+    top: 8vh;
+    /* Positions .nav-links below the nav bar */
+    background-color: black;
+    /* Sets background color */
+    display: flex;
+    flex-direction: column;
+    /* Stacks items vertically */
+    align-items: center;
+    /* Centers items horizontally */
+    width: 50%;
+    /* Sets the width to 50% of the viewport */
+    transform: translateX(100%);
+    /* Moves .nav-links out of view */
+  }
+
+  /* Hides list items inside .nav-links */
+  .nav-links li {
+    opacity: 0;
+  }
+}
+
+/* Class for making .nav-links visible */
+.nav-active {
+  transform: translateX(0%);
+  /* Moves .nav-links into view */
+}
+
+/* Hover effect for anchor tags inside .nav-links */
+.nav-links a:hover {
+  text-decoration: underline;
+  /* Underlines text on hover */
+  color: #fff;
+  /* Changes text color to white on hover */
+}
+
+
+
+.parallax {
+
+  /* Full height */
+  height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  /* Add relative positioning for the overlay */
+}
+
+.intro-header {
+  text-align: center;
+  padding: 50px 0;
+  /* Adjust padding as needed */
+  color: #ffffff;
+  /* Text color for the header */
+  font-size: 30px;
+  /* Adjust font size as needed */
+  font-weight: bold;
+  /* Adjust font weight as needed */
+  padding-top: 75px;
+
+}
+
+.question {
+  display: flex;
+}
+
+.video {
+  position: relative;
+  /* Make sure the pseudo-element is positioned correctly */
+  flex: 1;
+
+}
+
+.definition {
+  flex: 1;
+  padding: 5%;
+  color: white;
+  padding-right: 5%;
+  /* Increased padding to move text to the right */
+  padding-top: 7%;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 5%;
+}
+
+/* Adjust styling as needed */
+.definition p {
+  font-size: 18px;
+  line-height: 1.5;
+
+}
+
+.question-container {
+  background-color: rgba(128, 128, 128, 0.5);
+  /* Semi-transparent grey background */
+  border-radius: 20px;
+  /* Rounded corners */
+  margin: 100px auto;
+  /* Add margin to move the box down and center horizontally */
+  margin-left: 75px;
+  margin-right: 75px;
+  padding-left: 50px;
+  /* Adjust padding as needed */
+  padding-right: 50px;
+  /* Adjust padding as needed */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  padding-bottom: 40px;
+  /* Extra padding at the bottom */
+}
+
+.question-header {
+  text-align: center;
+  padding: 50px 0;
+  /* Adjust padding as needed */
+  color: #ffffff;
+  /* Text color for the header */
+  font-size: 30px;
+  /* Adjust font size as needed */
+  font-weight: bold;
+  /* Adjust font weight as needed */
+  margin-top: -110px;
+
+}
+
+.education-info {
+  width: 50%;
+  flex-shrink: 0;
+  /* Only extend to half the page */
+  padding: 20px;
+  /* For space and comfort */
+  margin-left: 5%;
+  color: white;
+  /* Consistent text color */
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+/* Styling for container */
+.container {
+  position: relative;
+  /* Sets the position relative for absolute positioning of child elements */
+  width: 50%;
+  /* Sets the width of the container to 50% of its parent */
+}
+
+/* Styling for images*/
+.image {
+  height: auto;
+  /* Sets the height to auto to maintain aspect ratio */
+  transition: .5s ease;
+  /* Adds a smooth transition effect */
+  backface-visibility: hidden;
+  /* Hides the back face of the element when rotated */
+}
+
+/* Styling for middle */
+.middle {
+  transition: .5s ease;
+  /* Adds a smooth transition effect */
+  opacity: 0;
+  /* Sets initial opacity to 0, making it invisible */
+  position: absolute;
+  /* Positions the element absolutely within the relative container */
+  top: 50%;
+  /* Centers the element vertically */
+  left: 50%;
+  /* Centers the element horizontally */
+  transform: translate(-50%, -50%);
+  /* Adjusts the position to be exactly centered */
+  text-align: center;
+  /* Centers the text inside the element */
+}
+
+/* Hover effect on image */
+.img-container:hover .image {
+  opacity: 0.3;
+  /* Reduces the opacity to 0.3 on hover */
+}
+
+/* Hover effect on middle */
+.img-container:hover .middle {
+  opacity: 1;
+  /* Makes the element fully visible on hover */
+}
+
+/* Styling for elements with class .text */
+.text {
+  background-color: #04AA6D;
+  /* Sets the background color to a shade of green */
+  color: white;
+  /* Sets the text color to white */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  padding: 16px 32px;
+  /* Adds padding of 16px top/bottom and 32px left/right */
+}
+
+/* Styling for elements with class .experience-header */
+.experience-header {
+  text-align: center;
+  /* Centers the text */
+  color: #ffffff;
+  /* Sets the text color to white */
+  font-size: 30px;
+  /* Sets the font size to 30px */
+  font-weight: bold;
+  /* Makes the text bold */
+  margin-top: -4%;
+  /* Sets the top margin to -4% */
+  margin-bottom: 2%;
+  /* Sets the bottom margin to 2% */
+}
+
+
+/* Styling for experience-info */
+.experience-info p {
+
+
+  color: white;
+  /* Sets the text color to white */
+  font-family: 'Poppins', sans-serif;
+  /* Applies the Poppins font family */
+  line-height: 1.5;
+  /* Sets the line height to 1.5 for better readability */
+  font-size: 18px;
+  /* Sets the font size to 18px */
+  padding-right: 5%;
+  /* Adds padding to the right side of the element */
+}
+
+/* Styling for job-header */
+.job-header {
+  text-align: center;
+  /* Centers the text */
+  color: #ffffff;
+  /* Sets the text color to white */
+  font-size: 30px;
+  /* Sets the font size to 30px */
+  font-weight: bold;
+  /* Makes the text bold */
+  margin-top: 2%;
+  /* Adds a top margin of 2% */
+}
+
+/* Styling for job-info */
+.job-info p {
+  width: 50%;
+  /* Only extend to half the page */
+  padding: 20px;
+  /* For space and comfort */
+  margin-left: 5%;
+  color: white;
+  /* Consistent text color */
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-size: 18px;
+
+}
+
+.fullStack-container {
+  position: relative;
+  /* Ensures proper positioning for the overlay */
+  width: 40%;
+  align-self: baseline;
+  height: auto;
+  margin-left: 20px;
+  transition: 0.5s;
+}
+
+.fullStack {
+  width: 100%;
+  /* Adjusts to the parent width */
+  height: auto;
+  transition: 0.5s ease;
+  /* Smooth transition for hover effect */
+  backface-visibility: hidden;
+  /* For smoother transitions */
+}
+
+/* Hover effect - reveal the shadow/overlay */
+.fullStack-container:hover {
+  box-shadow: 0 0 10px white;
+}
+
+
+
+/* Defining a keyframes animation named scaleAnimation */
+@keyframes scaleAnimation {
+
+  /* Initial state of the animation */
+  0% {
+    transform: translateX(-50%) scale(1);
+    /* Element is centered horizontally and at its original scale */
+  }
+
+  /* Midpoint of the animation */
+  50% {
+    transform: translateX(-50%) scale(1.25);
+    /* Element is still centered horizontally but scaled up by 1.25 times */
+  }
+
+  /* Final state of the animation */
+  100% {
+    transform: translateX(-50%) scale(1);
+    /* Element returns to being centered horizontally and at its original scale */
+  }
+}
+
+
+.graph-header {
+  text-align: center;
+
+  /* Adjust padding as needed */
+  color: #ffffff;
+  /* Text color for the header */
+  font-size: 30px;
+  /* Adjust font size as needed */
+  font-weight: bold;
+  /* Adjust font weight as needed */
+
+
+}
+
+/* Importing the Poppins font from Google Fonts with specific weights */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+/* Resetting margin and padding, and setting box-sizing to border-box for all elements and their pseudo-elements */
+*,
+*::before,
+*::after {
+  margin: 0;
+  /* Removes default margin */
+  padding: 0;
+  /* Removes default padding */
+  box-sizing: border-box;
+  /* Ensures padding and border are included in the element's total width and height */
+}
+
+/* Styling for the body element */
+body {
+  min-height: 100vh;
+  /* Sets a minimum height of 100% of the viewport height */
+  display: grid;
+  /* Uses grid layout */
+  align-content: center;
+  /* Aligns the content to the center vertically */
+  gap: 2rem;
+  /* Adds a gap between grid items */
+  padding: 2rem;
+  /* Adds padding around the body */
+  font-family: "Poppins", sans-serif;
+  /* Applies the Poppins font family */
+}
+
+/* Styling for h1 elements */
+h1 {
+  text-align: center;
+  /* Centers the text */
+}
+
+/* Styling for ul elements with class .timeline */
+ul.timeline {
+  --col-gap: 2rem;
+  /* Defines a CSS variable for column gap */
+  --row-gap: 2rem;
+  /* Defines a CSS variable for row gap */
+  --line-w: 0.25rem;
+  /* Defines a CSS variable for line width */
+  display: grid;
+  /* Uses grid layout */
+  grid-template-columns: var(--line-w) 1fr;
+  /* Defines two columns: one with the line width and one for content */
+  grid-auto-columns: max-content;
+  /* Sets the size of implicitly created columns */
+  column-gap: var(--col-gap);
+  /* Sets the gap between columns */
+  list-style: none;
+  /* Removes bullet points from list items */
+  width: min(60rem, 90%);
+  /* Sets the width to the smaller value between 60rem and 90% of the viewport width */
+  margin-inline: auto;
+  /* Centers the timeline horizontally */
+}
+
+/* Styling for the line in the timeline */
+ul.timeline::before {
+  content: "";
+  /* Creates a pseudo-element with no content */
+  grid-column: 1;
+  /* Places the pseudo-element in the first column */
+  grid-row: 1 / span 20;
+  /* Spans the pseudo-element over 20 rows */
+  background: rgb(225, 225, 225);
+  /* Sets the background color to light gray */
+  border-radius: calc(var(--line-w) / 2);
+  /* Rounds the corners of the line */
+}
+
+
+/* row gaps */
+ul li:not(:last-child) {
+  margin-bottom: var(--row-gap);
+}
+
+/* Styling for list items inside unordered lists */
+ul li {
+  grid-column: 2;
+  /* Places the list item in the second column */
+  --inlineP: 1.5rem;
+  /* Defines a CSS variable for horizontal margin/padding */
+  margin-inline: var(--inlineP);
+  /* Sets horizontal margin using the defined variable */
+  grid-row: span 2;
+  /* Spans the list item over two rows */
+  display: grid;
+  /* Uses grid layout */
+  grid-template-rows: min-content min-content min-content;
+  /* Defines three rows with minimum content height */
+}
+
+/* Styling for elements with class .date inside list items */
+ul li .date {
+  overflow-y: hidden;
+
+  --dateH: 3rem;
+  /* Defines a CSS variable for height */
+  height: var(--dateH);
+  /* Sets the height using the defined variable */
+  margin-inline: calc(var(--inlineP) * -1);
+  /* Sets negative horizontal margin to align with the flap */
+  text-align: center;
+  /* Centers text */
+  background-color: var(--accent-color);
+  /* Sets the background color using a CSS variable */
+  color: white;
+  /* Sets the text color to white */
+  font-size: 1.25rem;
+  /* Sets the font size */
+  font-weight: 700;
+  /* Sets the font weight to bold */
+  display: grid;
+  /* Uses grid layout */
+  place-content: center;
+  /* Centers the content inside the grid */
+  position: relative;
+  /* Positions the element relative for positioning pseudo-elements */
+  border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
+  /* Rounds top-left and bottom-left corners */
+}
+
+/* Styling for the pseudo-element ::before of elements with class .date inside list items */
+ul li .date::before {
+  content: "";
+  /* Creates a pseudo-element with no content */
+  width: var(--inlineP);
+  /* Sets the width using the defined variable */
+  aspect-ratio: 1;
+  /* Ensures the element is square */
+  background: var(--accent-color);
+  /* Sets the background color using a CSS variable */
+  background-image: linear-gradient(rgb(249, 240, 240, 0.2) 100%, transparent);
+  /* Adds a gradient background */
+  position: absolute;
+  /* Positions the element absolutely within its container */
+  top: 100%;
+  /* Positions the element at the bottom of its container */
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  /* Clips the element to a triangular shape */
+  right: 0;
+  /* Aligns the element to the right */
+}
+
+/* Styling for the pseudo-element ::after of elements with class .date inside list items */
+ul li .date::after {
+  content: "";
+  /* Creates a pseudo-element with no content */
+  position: absolute;
+  /* Positions the element absolutely within its container */
+  width: 2rem;
+  /* Sets the width */
+  aspect-ratio: 1;
+  /* Ensures the element is square */
+  background: var(--bgColor);
+  /* Sets the background color using a CSS variable */
+  border: 0.3rem solid var(--accent-color);
+  /* Adds a border with a color from a CSS variable */
+  border-radius: 50%;
+  /* Rounds the element to make it circular */
+  top: 50%;
+  /* Centers the element vertically */
+  transform: translate(50%, -50%);
+  /* Offsets the element for perfect centering */
+  right: calc(100% + var(--col-gap) + var(--line-w) / 2);
+  /* Positions the element to the left of the line */
+}
+
+/* Styling for elements with class .title and .descr inside list items */
+ul li .title,
+ul li .descr {
+  background: var(--bgColor);
+  /* Sets the background color using a CSS variable */
+  position: relative;
+  /* Positions the element relative for positioning pseudo-elements */
+  padding-inline: 1.5rem;
+  /* Adds horizontal padding */
+}
+
+/* Additional styling for elements with class .title inside list items */
+ul li .title {
+  overflow: hidden;
+  /* Hides overflow content */
+  padding-block-start: 1.5rem;
+  /* Adds padding to the top */
+  padding-block-end: 1rem;
+  /* Adds padding to the bottom */
+  font-weight: 500;
+  /* Sets the font weight */
+  color: white;
+  /* Sets the text color to white */
+}
+
+/* Additional styling for elements with class .descr inside list items */
+ul li .descr {
+  padding-block-end: 1.5rem;
+  /* Adds padding to the bottom */
+  font-weight: 300;
+  /* Sets the font weight to light */
+  color: white;
+  /* Sets the text color to white */
+}
+
+/* Styling for the pseudo-elements ::before of elements with class .title and .descr inside the timeline */
+ul.timeline li .title::before,
+ul.timeline li .descr::before {
+  content: "";
+  /* Creates a pseudo-element with no content */
+  position: absolute;
+  /* Positions the element absolutely within its container */
+  width: 90%;
+  /* Sets the width */
+  height: 0.5rem;
+  /* Sets the height */
+  background: rgb(250, 250, 250, 0.5);
+  /* Sets a light gray background with opacity */
+  left: 50%;
+  /* Centers the element horizontally */
+  border-radius: 50%;
+  /* Rounds the element */
+  filter: blur(4px);
+  /* Adds a blur effect */
+  transform: translate(-50%, 50%);
+  /* Offsets the element for perfect centering */
+}
+
+/* Additional styling for the pseudo-element ::before of elements with class .title inside the timeline */
+ul.timeline li .title::before {
+  bottom: calc(100% + 0.125rem);
+  /* Positions the element just above the title */
+}
+
+/* Additional styling for the pseudo-element ::before of elements with class .descr inside the timeline */
+ul.timeline li .descr::before {
+  z-index: -1;
+  /* Places the element behind the content */
+  bottom: 0.25rem;
+  /* Positions the element just below the description */
+}
+
+/* Media query for screen widths of at least 40rem (640px) */
+@media (min-width: 40rem) {
+
+  /* Styling for ul elements with class .timeline */
+  ul.timeline {
+    grid-template-columns: 1fr var(--line-w) 1fr;
+    /* Defines three columns: two flexible and one with the line width */
+  }
+
+  /* Styling for the ::before pseudo-element of ul.timeline */
+  ul.timeline::before {
+    grid-column: 2;
+    /* Places the pseudo-element in the second column */
+  }
+
+  /* Styling for odd-numbered list items inside ul.timeline */
+  ul.timeline li:nth-child(odd) {
+    grid-column: 1;
+    /* Places odd list items in the first column */
+  }
+
+  /* Styling for even-numbered list items inside ul.timeline */
+  ul.timeline li:nth-child(even) {
+    grid-column: 3;
+    /* Places even list items in the third column */
+  }
+
+  /* Styling specifically for the second list item inside ul.timeline */
+  ul.timeline li:nth-child(2) {
+    grid-row: 2/4;
+    /* Spans the second list item over the second and third rows */
+  }
+
+  /* Styling for the ::before pseudo-element of .date in odd-numbered list items */
+  ul.timeline li:nth-child(odd) .date::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    /* Clips the element to a triangular shape pointing downwards */
+    left: 0;
+    /* Aligns the element to the left */
+  }
+
+  /* Styling for the ::after pseudo-element of .date in odd-numbered list items */
+  ul li:nth-child(odd) .date::after {
+    transform: translate(-50%, -50%);
+    /* Offsets the element for perfect centering */
+    left: calc(100% + var(--col-gap) + var(--line-w) / 2);
+    /* Positions the element to the right of the line */
+  }
+
+  /* Additional styling for .date in odd-numbered list items */
+  ul li:nth-child(odd) .date {
+    border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
+    /* Rounds top-right and bottom-right corners */
+  }
+}
+
+/* Styling for elements with class .credits */
+.credits {
+  margin-top: 1rem;
+  /* Adds a top margin */
+  text-align: right;
+  /* Aligns text to the right */
+}
+
+/* Styling for anchor elements inside elements with class .credits */
+.credits a {
+  color: var(--color);
+  /* Sets the text color using a CSS variable */
+}
+
+
+.chart-box {
+  width: 60%;
+  /* Allows the box to scale */
+  height: auto;
+  /* Adjust height automatically */
+  padding: 10px;
+  /* Space between box border and content */
+  border: 2px solid #ccc;
+  /* Border around the box */
+  margin: 0 auto;
+  /* Center the box */
+  box-sizing: border-box;
+  /* Ensures padding is included in width calculation */
+}
+
+/* Ensure the chart fills the box and is responsive */
+.chart-box canvas {
+  width: 100%;
+  /* Chart fills the box */
+  height: 100%;
+  /* Fixed height */
+}

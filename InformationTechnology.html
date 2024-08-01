@@ -1,0 +1,435 @@
+<!-- Kaibo Huang -->
+<!--Date: 2024/06/03 -->
+<!-- HTML File for Information Technology Webpage 
+
+Challenge Features: 
+- Utlize Javascript for some meaningful purpose (for the timeline)
+- Include an element that moves down as the user scrolls down
+-->
+
+<!DOCTYPE html> <!-- Defining the document type as HTML -->
+<html lang="en"> <!-- Defining the language of the document -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Declaring character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Setting viewport for responsive design -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Specifying the version of Internet Explorer to use -->
+  <link rel="stylesheet" href="Webpage_Style.css"> <!-- Linking an external stylesheet -->
+  <title>Careers In Computing</title> <!-- Setting the title of the page -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <!-- Including a script library -->
+</head>
+
+<body>
+  <div class="question-container"> <!-- Creating a container for a question -->
+    <header class="intro-header"> <!-- Creating a header for introductory content -->
+      <h1>What is Information Technology</h1> <!-- Defining a heading -->
+    </header>
+
+    <div class="question"> <!-- Creating a container for the question content -->
+      <div class="video" style="margin-left: 100px; margin-top: 80px;"> <!-- Styling a video container -->
+        <!-- Embedding a YouTube video -->
+        <iframe width="672" height="400" src="https://www.youtube.com/embed/XZrckLYqdys?si=t0zXNE1soV1p-uee"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="definition"> <!-- Creating a container for the definition -->
+        <!-- Providing information about Information Technology -->
+        <p>Information technology (IT) refers to the use of computers, software, networks, and other digital tools to
+          store, retrieve, transmit, and manipulate data. It encompasses a wide range of technologies and practices that
+          enable individuals and organizations to manage information efficiently and effectively. IT includes hardware
+          components like computers, servers, and networking devices, as well as software applications and systems for
+          tasks such as data processing, communication, and decision-making. Additionally, IT involves the design,
+          development, implementation, and maintenance of these technologies to meet the needs of users and businesses
+          across various industries.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <header class="question-header" style="margin-bottom: -100px;"> <!-- Creating a header for a question -->
+    <h1>Education</h1> <!-- Defining a heading -->
+  </header>
+
+  <div class="row"> <!-- Creating a row for educational information -->
+    <div class="education-info"> <!-- Creating a container for educational information -->
+      <!-- Providing information about education in IT -->
+      <p>
+        A bachelor’s or master’s degree in fields such as computer science provides a strong foundation in core IT
+        concepts, including programming languages, algorithms, data structures, computer architecture, and software
+        engineering principles. Similarly, degrees in business administration or commerce with a focus on information
+        systems management can equip individuals with the business acumen necessary to understand IT from a strategic
+        perspective, especially for roles that involve managing IT projects, budgets, and teams.<br><br>
+
+        However, what sets candidates apart in the competitive IT job market today are often industry-recognized
+        certifications that validate specific skills and expertise. Certifications demonstrate a candidate's commitment
+        to continuous learning and professional development, as well as their proficiency in specific technologies or
+        areas within IT. Employers increasingly value certifications as they provide tangible evidence of an
+        individual's capabilities, often in areas where practical skills are in high demand.
+        <br><br>
+        Click on the images to see some certifications you should have before applying for a job in IT.
+      </p>
+    </div>
+
+    <div class="education-info">
+      <!-- Creating containers for certification images with links -->
+      <div class="img-container" style="margin-top: -50px;">
+        <a href="https://www.comptia.org/certifications/a"><img src="Images/COMPTIA.png" class="image"
+            width="250" /></a> <!-- Linking an image -->
+      </div>
+
+      <div class="img-container" style="margin-top: -50px;">
+        <a
+          href="https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html"><img
+            src="Images/CCNA.jpg" class="image" width="225" /></a> <!-- Linking an image -->
+      </div>
+
+      <div class="img-container" style="margin-top: -90px; margin-left: 30px;">
+        <a href="https://aws.amazon.com/certification/"><img src="Images/AWS.png" class="image" width="200" /></a>
+        <!-- Linking an image -->
+      </div>
+
+      <div class="img-container" style="margin-top: -90px; margin-left: 40px;">
+        <a href="https://www.isc2.org/certifications/cissp"><img src="Images/CISSP.png" class="image" width="200" /></a>
+        <!-- Linking an image -->
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Creating a header for the job experience section -->
+  <header class="experience-header">
+    <!-- Defining a heading for the job experience section -->
+    <h1>Job Experience</h1>
+  </header>
+
+  <!-- Creating a row for content -->
+  <div class="row">
+    <!-- Creating a container for education information -->
+    <div class="education-info">
+      <!-- Styling an image container -->
+      <div class="img-container" style="margin-top: -200px; margin-left: 50px;">
+        <!-- Adding a link with an image -->
+        <a href="https://www.tdsb.on.ca/High-School/Your-School-Day/Curriculum/Technology#tech">
+          <img src="Images/tdsb.png" alt="University of Waterloo" class="image" width="200" />
+          <!-- Creating a container for text in the middle -->
+          <div class="middle">
+            <!-- Adding text -->
+            <div class="text">Check out courses!</div>
+          </div>
+        </a>
+      </div>
+      <!-- Styling an image container -->
+      <div class="img-container" style="margin-left: 50px;">
+        <!-- Adding a link with an image -->
+        <a href="https://www.ontario.ca/page/specialist-high-skills-major">
+          <img src="Images/shsm.png" alt="University of Toronto" class="image" width="275" />
+          <!-- Creating a container for text in the middle -->
+          <div class="middle">
+            <!-- Adding text -->
+            <div class="text">Enroll in SHSM</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- Creating a container for experience information -->
+    <div class="experience-info">
+      <!-- Providing information about gaining experience in IT -->
+      <p>To secure a position in IT, having prior experience with computers and user interfaces is often expected.
+        Enrolling in a technology course during high school provides an excellent starting point. For example, at MGCI,
+        the tech squad addresses computer issues in each classroom, offering practical experience. Additionally,
+        participating in your school's Specialist High Skills Major (SHSM) program can be beneficial. Seek opportunities
+        to immerse yourself in hands-on learning.
+      </p>
+    </div>
+  </div>
+
+  <!-- Creating a header for a job -->
+  <header class="job-header" ;>
+    <!-- Defining a heading for a featured career -->
+    <h1>Featured Career - Cloud Architect</h1>
+  </header>
+
+  <!-- Creating a row for job information -->
+  <div class="job-info row">
+    <!-- Providing information about the role of a Cloud Architect -->
+    <p> Cloud architects are essential for designing and managing cloud-based infrastructure, leveraging skills in
+      evaluating and implementing cloud technologies like AWS, Azure, and GCP. They specialize in architecting scalable,
+      secure environments, ensuring seamless integration and optimization for performance and cost-efficiency. Security
+      and compliance are paramount, with architects implementing robust measures and monitoring for vulnerabilities.
+      Continuous optimization, cost management, and staying abreast of emerging technologies are key components of their
+      role.
+      <br><br>
+      Cloud architects collaborate with stakeholders to define migration strategies and oversee the seamless transition
+      of applications and workloads to the cloud. They possess expertise in infrastructure design, security, and
+      compliance, ensuring that cloud environments meet business requirements and industry standards. Additionally,
+      cloud architects play a crucial role in monitoring cloud resource utilization, identifying optimization
+      opportunities, and implementing cost-saving measures to maximize return on investment.
+    </p>
+
+    <!-- Creating a container for an image -->
+    <div class="fullStack-container">
+      <!-- Adding an image -->
+      <img src="Images/cloud.webp" alt="Full Stack Image" class="fullStack">
+    </div>
+  </div>
+
+  <!-- Creating a header for a job -->
+  <header class="job-header">
+    <!-- Defining a heading for a day in the life of a Cloud Architect -->
+    <h1>Day In A Life of A Cloud Architect</h1>
+  </header>
+
+  <!-- This is an unordered list representing a timeline -->
+  <ul class="timeline">
+    <!-- This list item represents a time slot from 8:00 am to 9:00 am -->
+    <li style="--accent-color:#41516C">
+      <!-- Displaying the time slot -->
+      <div class="date">8:00 am - 9:00 am</div>
+      <!-- Title of the activity during this time -->
+      <div class="title">Start of the Day</div>
+      <!-- Description of the activity -->
+      <div class="descr">Begin the day by checking emails and messages.
+        Respond to any urgent requests and review the day's tasks. Provide guidance to interns and team members,
+        addressing any questions or concerns they may have regarding ongoing projects or cloud infrastructure.
+      </div>
+    </li>
+    <!-- Next time slot from 9:00 am to 10:00 am -->
+    <li style="--accent-color:#FBCA3E">
+      <div class="date">9:00 am - 10:00 am</div>
+      <div class="title">Client Meetings</div>
+      <div class="descr">Participate in scheduled client meetings to discuss project progress, gather requirements, and
+        provide updates on cloud infrastructure development.
+        Collaborate with clients using collaborative platforms like Google Docs or Microsoft Office 365 to understand
+        their business needs, address any concerns or feedback, and ensure alignment between project goals and client
+        expectations.
+      </div>
+    </li>
+    <!-- Next time slot from 10:00 am to 11:00 am -->
+    <li style="--accent-color:#E24A68">
+      <div class="date">10:00 am - 11:00 am</div>
+      <div class="title">Team Meetings</div>
+      <div class="descr">Join daily stand-up meetings with the cloud engineering team using collaboration tools like
+        Microsoft Teams or Slack to discuss project progress, identify challenges, and plan tasks for the day.
+        Coordinate efforts with team members, share insights from client meetings, and prioritize activities using
+        project management platforms such as Jira to meet project deadlines effectively.
+      </div>
+    </li>
+    <!-- Next time slot from 11:00 am to 12:00 pm -->
+    <li style="--accent-color:#1B5F8C">
+      <div class="date">11:00 am - 12:00 pm</div>
+      <div class="title">Cloud Infrastructure Development</div>
+      <div class="descr">Engage in coding sessions using integrated development environments (IDEs) like Visual Studio
+        Code or IntelliJ IDEA to develop and refine cloud infrastructure components based on client
+        requirements and feedback. Work on implementing new features, optimizing existing solutions, and troubleshooting
+        any issues or bugs in the cloud environment using version control systems like Git or Azure DevOps.
+      </div>
+    </li>
+    <!-- Next time slot from 12:00 pm to 1:00 pm -->
+    <li style="--accent-color:#4CADAD">
+      <div class="date">12:00 pm - 1:00 pm</div>
+      <div class="title">Lunch Break</div>
+      <div class="descr">Take a break for lunch to recharge and relax. Use this time to step away from work, relax, and
+        recharge for the afternoon tasks ahead.
+      </div>
+    </li>
+    <!-- Next time slot from 1:00 pm to 2:30 pm -->
+    <li style="--accent-color:#41516C">
+      <div class="date">1:00 pm - 2:30 pm</div>
+      <div class="title">Cloud Optimization and Automation</div>
+      <div class="descr">Focus on optimizing cloud infrastructure for performance, cost-efficiency, and scalability
+        based on client feedback and requirements. Implement automation scripts and workflows using
+        infrastructure-as-code (IaC) tools like Terraform or AWS CloudFormation to streamline deployment processes and
+        enhance operational efficiency, ensuring alignment with client objectives and project goals.
+      </div>
+    </li>
+    <!-- Next time slot from 2:30 pm to 3:30 pm -->
+    <li style="--accent-color:#FBCA3E">
+      <div class="date">2:30 pm - 3:30 pm</div>
+      <div class="title">Training and Skill Development</div>
+      <div class="descr">Dedicate time to self-learning and skill development in cloud technologies and platforms,
+        incorporating insights from client meetings and project requirements. Engage in online courses, tutorials, or
+        workshops using platforms like Coursera, Udemy, or Pluralsight to stay updated with the latest trends and best
+        practices in cloud computing, enhancing expertise to meet client needs effectively.
+      </div>
+    </li>
+    <!-- Next time slot from 3:30 pm to 4:30 pm -->
+    <li style="--accent-color:#E24A68">
+      <div class="date">3:30 pm - 4:30 pm</div>
+      <div class="title">Cloud Security and Compliance</div>
+      <div class="descr">Review and enhance security measures to ensure the integrity and confidentiality of cloud-based
+        systems and data, considering client-specific security requirements and compliance standards. Collaborate with
+        security teams using collaboration tools like Microsoft Teams or Slack to address any identified vulnerabilities
+        or threats and implement necessary safeguards to protect client assets and information.
+      </div>
+    </li>
+    <!-- Next time slot from 4:30 pm to 5:00 pm -->
+    <li style="--accent-color:#1B5F8C">
+      <div class="date">4:30 pm - 5:00 pm</div>
+      <div class="title">Documentation and Wrap-Up</div>
+      <div class="descr">Conclude the day by documenting work progress, updating project documentation, and logging any
+        important findings or insights from client interactions using documentation tools like Confluence. Review tasks
+        completed, note any pending issues or follow-ups discussed with clients, and prepare for the
+        next day's activities, ensuring client needs and project objectives are prioritized and addressed effectively.
+      </div>
+    </li>
+  </ul>
+
+  <!-- Header section -->
+  <header class="graph-header">
+    <!-- Title of the graph -->
+    <h1>Average Salaries of IT Careers</h1>
+  </header>
+
+  <!-- Chart container -->
+  <div class="chart-box">
+    <!-- Canvas element to render the chart -->
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <!-- JavaScript code for chart creation -->
+  <script>
+    // Data for x-axis (IT career titles)
+    const xValues = [
+      "Network Administrator",
+      "Systems Administrator",
+      "IT Support Specialist",
+      "Cloud Solutions Architect",
+      "IT Project Manager"
+    ];
+
+    // Data for y-axis (average salaries)
+    const yValues = [64056, 79750, 53387, 137193, 91481];
+
+    // Colors for bars in the chart
+    const barColors = ["#f94144", "#f3722c", "#f8961e", "#90be6d", "#43aa8b"];
+
+    // Creating a bar chart using Chart.js library
+    new Chart("myChart", {
+      type: "bar",
+      data: {
+        // Labels for x-axis
+        labels: xValues,
+        datasets: [{
+          // Background colors for bars
+          backgroundColor: barColors,
+          // Data for y-axis
+          data: yValues,
+          // Rounded corners for bars
+          borderRadius: 5
+        }]
+      },
+      options: {
+        responsive: true, // Enable responsiveness
+        maintainAspectRatio: false, // Do not maintain aspect ratio
+
+        // Customizing scales (y-axis and x-axis)
+        scales: {
+          yAxes: [{
+            gridLines: {
+              // Faint gridlines for a cleaner look
+              color: "rgba(255, 255, 255, 0.1)",
+              // Faint zero line
+              zeroLineColor: "rgba(255, 255, 255, 0.1)"
+            },
+            ticks: {
+              // White tick labels
+              fontColor: "#ffffff",
+              // Start at zero
+              beginAtZero: true
+            }
+          }],
+          xAxes: [{
+            gridLines: {
+              // Faint gridlines
+              color: "rgba(255, 255, 255, 0.1)"
+            },
+            ticks: {
+              // White tick labels
+              fontColor: "#ffffff"
+            }
+          }]
+        },
+
+        // Customizing legend
+        legend: {display: false}, // No legend for a cleaner look
+
+        // Customizing title
+        title: {
+          display: true,
+          // White title
+          fontColor: "#ffffff"
+        },
+
+        // Customizing tooltips
+        plugins: {
+          tooltip: {
+            callbacks: {
+              // Custom label format for tooltips
+              label: function (context) {
+                return '$' + (context.parsed.y);
+              }
+            }
+          }
+        },
+        tooltips: {
+          // Dark background for tooltips
+          backgroundColor: "rgba(0, 0, 0, 0.7)",
+          // White text in tooltips
+          titleFontColor: "#ffffff",
+          // White text in tooltips
+          bodyFontColor: "#ffffff",
+          // Rounded corners on tooltips
+          cornerRadius: 5,
+          // Show the colored square for the dataset in the tooltip
+          displayColors: true
+        }
+      }
+    });
+  </script>
+
+  <!-- Navigation section -->
+  <nav>
+    <!-- Logo -->
+    <div class="logo">
+      <!-- Link to homepage -->
+      <h4><a href="index.html">Careers in Computing</a></h4>
+    </div>
+    <!-- Navigation links -->
+    <ul class="nav-links">
+      <!-- Home link -->
+      <li style="margin-right: 40px">
+        <a href="index.html">Home</a>
+      </li>
+      <!-- Computer Science link -->
+      <li>
+        <a href="ComputerScience.html">Computer Science</a>
+      </li>
+      <!-- Computer Engineering link -->
+      <li>
+        <a href="ComputerEngineering.html">Computer Engineering</a>
+      </li>
+      <!-- Information Technology link -->
+      <li>
+        <a href="InformationTechnology.html">Information Technology</a>
+      </li>
+      <!-- Sources link -->
+      <li style="margin: 0 10px;">
+        <a href="Sources.html">Sources</a>
+      </li>
+    </ul>
+    <!-- Burger icon for mobile navigation -->
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+  <!-- Script for Computer Science page -->
+  <script src="Webpage.js"></script>
+
+</body>
+
+</html>

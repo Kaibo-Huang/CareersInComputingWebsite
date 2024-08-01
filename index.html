@@ -1,0 +1,230 @@
+<!-- Kaibo Huang -->
+<!--Date: 2024/06/03 -->
+<!-- HTML File for Home Webpage 
+
+Challenge Features: 
+- Utlize Javascript for some meaningful purpose (for the timeline)
+- Include an element that moves down as the user scrolls down
+-->
+
+<!DOCTYPE html> <!-- Declares the document type as HTML5 -->
+<html lang="en"> <!-- Opens the HTML document and sets the language to English -->
+
+<head> <!-- Opens the head section containing metadata and links -->
+  <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 for proper text display -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Ensures proper scaling on different devices -->
+  <title>Careers In Computing</title> <!-- Sets the title of the webpage displayed in the browser tab -->
+  <link rel="stylesheet" href="style.css"> <!-- Links to an external CSS stylesheet for styling the page -->
+</head> <!-- Closes the head section -->
+
+<body> <!-- Opens the body section containing the content of the page -->
+  <nav> <!-- Opens the navigation section -->
+    <div class="logo"> <!-- Container for the website logo -->
+      <h4><a href="#">Careers In Computing</a></h4> <!-- Heading with a hyperlink for the logo text -->
+    </div>
+    <ul class="nav-links"> <!-- Unordered list for navigation links -->
+      <li style="margin-right: 40px"> <!-- List item with custom right margin -->
+        <a href="index.html">Home</a> <!-- Link to the homepage -->
+      </li>
+      <li> <!-- List item for the Computer Science page link -->
+        <a href="ComputerScience.html">Computer Science</a> <!-- Link to the Computer Science page -->
+      </li>
+      <li> <!-- List item for the Computer Engineering page link -->
+        <a href="ComputerEngineering.html">Computer Engineering</a> <!-- Link to the Computer Engineering page -->
+      </li>
+      <li> <!-- List item for the Information Technology page link -->
+        <a href="InformationTechnology.html">Information Technology</a> <!-- Link to the Information Technology page -->
+      </li>
+      <li style="margin: 0 10px;"> <!-- List item with custom margins for the Sources page link -->
+        <a href="Sources.html">Sources</a> <!-- Link to the Sources page -->
+      </li>
+    </ul>
+    <div class="burger"> <!-- Container for the burger menu icon -->
+      <div class="line1"></div> <!-- Line 1 of the burger icon -->
+      <div class="line2"></div> <!-- Line 2 of the burger icon -->
+      <div class="line3"></div> <!-- Line 3 of the burger icon -->
+    </div>
+  </nav> <!-- Closes the navigation section -->
+
+  <div id="parallax-container"> <!-- Container for the parallax effect -->
+    <div class="parallax"> <!-- Parallax effect section -->
+      <div class="quote"> <!-- Container for the quote section -->
+        <img src="Images/SteveJobs.jpg" alt="Steve Jobs"> <!-- Image of Steve Jobs with alt text -->
+        <h1>"I think everybody in this country should learn how to program a computer because it teaches you how to
+          think."</h1> <!-- Displayed quote -->
+      </div>
+    </div>
+
+    <div class="workforce"> <!-- Container for workforce information -->
+      <div class="workforce-image"> <!-- Container for workforce image -->
+        <img src="Images/workforce.jpg" alt="Workforce Graph"> <!-- Image of a workforce graph with alt text -->
+      </div>
+      <div class="workforce-content" style="margin-top: 150px;" <!-- Container for workforce content -->
+        <h2>Jobs in Computing are Growing and High in Demand</h2> <!-- Subheading for workforce section -->
+        <p>The demand for computing jobs has experienced significant growth in recent years, driven by technological
+          advancements. Despite the challenges presented by the pandemic, the computing sector remained resilient,
+          largely due to the ability to work remotely. This shift towards remote work highlighted the importance of
+          digital infrastructure and skilled professionals. Furthermore, the rise of future markets such as artificial
+          intelligence and data analytics has contributed to the increased demand for computing expertise. Businesses
+          are increasingly relying on these technologies to improve efficiency and gain competitive advantages. As a
+          result, the job market in computing continues to expand, offering numerous opportunities for individuals with
+          the necessary skills and qualifications. There is no better time to get into the job market than now!</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="highSchoolECS_Title"> <!-- Container for high school ECS title -->
+    <h1>How can I get started as a high schooler?</h1> <!-- Main heading for high school ECS section -->
+  </div>
+
+  <div class="highSchoolECS section-reversed"> <!-- Container for high school ECS section with reversed layout -->
+    <div class="workforce-image"> <!-- Container for images of hackathons -->
+      <a href="https://jamhacks.ca/" target="_blank"> <!-- External link to JamHacks -->
+        <img src="Images/JamHacks.webp" alt="Hackathon" width="100" style="margin-top: 80px;">
+        <!-- Image for JamHacks -->
+      </a>
+      <a href="https://hackthenorth.com/" target="_blank"> <!-- External link to Hack the North -->
+        <img src="Images/htn.png" alt="Hackathon" width="120" style="margin-top: 50px; margin-left: 100px;">
+        <!-- Image for Hack the North -->
+      </a>
+      <a href="https://uofthacks.com/" target="_blank"> <!-- External link to UofTHacks -->
+        <img src="Images/UofTHacks.svg" alt="Hackathon" width="180" style="margin-top: 70px; margin-left: 80px;">
+        <!-- Image for UofTHacks -->
+      </a>
+      <a href="https://www.ethtoronto.ca/" target="_blank"> <!-- External link to ETHToronto -->
+        <img src="Images/ETHToronto.png" alt="Hackathon" width="200"> <!-- Image for ETHToronto -->
+      </a>
+    </div>
+    <div class="workforce-content"> <!-- Container for content about hackathons -->
+      <h2>Attend Hackathons</h2> <!-- Subheading for hackathon section -->
+      <p> <!-- Paragraph about the benefits of hackathons -->
+        Hackathons are events where people from various backgrounds gather to tackle real-world challenges
+        collaboratively within a limited timeframe. Participants, including developers, designers, entrepreneurs, and
+        experts, work intensively over a compressed timeframe, typically a few hours to a couple of days, to prototype
+        solutions. These events provide a learning experience, allowing attendees to explore new technologies, tools,
+        and methodologies firsthand. Moreover, hackathons foster teamwork, communication, and leadership skills as
+        participants collaborate with others. Whether you're a seasoned professional or a novice, hackathons offer an
+        opportunity for personal and professional growth, networking, and innovation. <br> <br> Clicking on the images
+        will take you to some hackathons you can attend!
+      </p>
+    </div>
+  </div>
+
+  <div class="highSchoolECS"> <!-- Container for high school ECS section -->
+    <div class="workforce-image"> <!-- Container for images of competitive programming -->
+      <a href="https://ioinformatics.org/" target="_blank"> <!-- External link to IOI -->
+        <img src="Images/ioi.png" alt="Hackathon" width="100" style="margin-top: 80px;"> <!-- Image for IOI -->
+      </a>
+      <a href="https://summerofcode.withgoogle.com/" target="_blank"> <!-- External link to Google Summer of Code -->
+        <img src="Images/SummerOfCode.png" alt="Hackathon" width="120" style="margin-top: 50px; margin-left: 70px;">
+        <!-- Image for Google Summer of Code -->
+      </a>
+      <a href="https://cemc.uwaterloo.ca/contests/ccc-cco.html" target="_blank"> <!-- External link to CCC -->
+        <img src="Images/CCC.png" alt="Hackathon" width="150" style="margin-top: 70px; margin-left: 50px;">
+        <!-- Image for CCC -->
+      </a>
+      <a href="https://imaginecup.microsoft.com/en-us/junior" target="_blank"> <!-- External link to Imagine Cup -->
+        <img src="Images/ImagineCup.png" alt="Hackathon" width="300"> <!-- Image for Imagine Cup -->
+      </a>
+    </div>
+    <div class="workforce-content"> <!-- Container for content about competitive programming -->
+      <h2>Competitive Programming</h2> <!-- Subheading for competitive programming section -->
+      <p> <!-- Paragraph about the benefits of competitive programming -->
+        Competitive programming competitions are events where participants tackle algorithmic and mathematical problems
+        within a set timeframe, typically using programming languages like C++, Java, or Python. These contests range
+        from local and online challenges to prestigious global events like the International Olympiads of
+        Informatics(IOI) and Google Summer of Code. Engaging in these competitions helps individuals sharpen their
+        problem-solving skills, enhance their understanding of data structures and algorithms, and improve their coding
+        efficiency. Top scoring individuals in these competitions often receive prizes, recognition, and job offers.
+        <br> <br> Clicking on the images will take you to some competitions you can write!
+      </p>
+    </div>
+  </div>
+
+  <div class="highSchoolECS section-reversed"> <!-- Container for high school ECS section with reversed layout -->
+    <div class="img-container" > <!-- Container for image of Discord -->
+      <a href="https://discord.gg/HmMSGtfVZG" target="_blank"> <!-- External link to Discord server -->
+        <img src="Images/discord.png" alt="Hackathon" width="250" style="margin-top: 30px; margin-left: 350px;">
+        <!-- Image for Discord -->
+      </a>
+    </div>
+    <div class="workforce-content"> <!-- Container for content about CS Club -->
+      <h2>Join CS Club!</h2> <!-- Subheading for CS Club section -->
+      <p> <!-- Paragraph about the benefits of joining a CS club -->
+        Joining your school's Computer Science club offers numerous benefits that extend beyond the classroom. As a
+        member, you'll have access to a supportive community of peers who share your interests, providing opportunities
+        for collaboration, knowledge sharing, and networking. The club often hosts coding workshops and lectures, which
+        helps expose you to new technologies and practices. <br><br> MGCI has their very own CS Club! Click on the
+        discord icon to join.
+      </p>
+    </div>
+  </div>
+
+  <div class="highSchoolECS"> <!-- Container for high school ECS section -->
+    <div class="workforce-image"> <!-- Container for images of tech internships -->
+      <a href="https://www.rbc.com/en/future-launch/resource-type/programs-services/rbc-summer-tech-labs/"
+        target="_blank"> <!-- External link to RBC tech internships -->
+        <img src="Images/RBC.png" alt="Hackathon" width="100" style="margin-bottom: 40px;">
+        <!-- Image for RBC tech internships -->
+      </a>
+      <a href="https://www.nokia.com/about-us/careers/student-and-graduate-opportunities/canada/future-tech-summer-internship/"
+        target="_blank"> <!-- External link to Nokia tech internships -->
+        <img src="Images/nokia.png" alt="Hackathon" width="300" style="margin-top: 60px; margin-left: 100px;">
+        <!-- Image for Nokia tech internships -->
+      </a>
+      <a href="https://www.indigoresearch.org/program/iris" target="_blank">
+        <!-- External link to Indigo tech internships -->
+        <img src="Images/indigo.png" alt="Hackathon" width="200" style="margin-top: 60px; margin-left: 50px;">
+        <!-- Image for Indigo tech internships -->
+      </a>
+    </div>
+    <div class="workforce-content"> <!-- Container for content about tech internships -->
+      <h2>Tech Internships</h2> <!-- Subheading for tech internships section -->
+      <p> <!-- Paragraph about the benefits of tech internships -->
+        Tech internships for high school students provide invaluable hands-on experience and skill development in the
+        industry. Through real-world projects, interns apply classroom knowledge, acquiring technical skills like
+        programming and data analysis, alongside essential soft skills such as teamwork and communication. These
+        internships offer insight into diverse tech career paths, guiding students in discovering their passion within
+        the field. Mentorship from experienced professionals and the enhancement of resumes and college applications
+        further solidify the benefits of these internships. <br><br> Click on the images to apply for internships!
+      </p>
+    </div>
+  </div>
+
+  <div class="highSchoolECS section-reversed"> <!-- Container for high school ECS section with reversed layout -->
+    <div class="workforce-image" style="text-align: center;">
+      <!-- Container for images of tech conferences with centered alignment -->
+      <a href="https://collisionconf.com/" target="_blank" style="display: inline-block; margin-right: 20px;">
+        <!-- External link to Collision conference -->
+        <img src="Images/collision.png" alt="Hackathon" width="250"> <!-- Image for Collision conference -->
+      </a>
+      <a href="https://techspotoronto.ca/" target="_blank"
+        style="display: inline-block; margin-right: 20px; margin-top: -20px;"> <!-- External link to Techspo Toronto -->
+        <img src="Images/techspo.png" alt="Hackathon" width="250"> <!-- Image for Techspo Toronto -->
+      </a>
+      <a href="https://fitc.ca/event/to24/" target="_blank" style="display: inline-block;">
+        <!-- External link to FITC -->
+        <img src="Images/fitc.png" alt="Hackathon" width="200"> <!-- Image for FITC -->
+      </a>
+    </div>
+    <div class="workforce-content"> <!-- Container for content about tech conferences -->
+      <h2>Tech Conferences</h2> <!-- Subheading for tech conferences section -->
+      <p> <!-- Paragraph about the benefits of tech conferences -->
+        Tech conferences provide attendees with the chance to hear speeches from industry leaders, gain insights into
+        job opportunities, explore cutting-edge technology, and establish valuable connections. Through speeches and
+        panel discussions, participants can absorb knowledge and ideas from experts in various fields. Additionally,
+        tech conferences often feature career fairs or networking sessions where attendees can learn about job openings
+        and connect with recruiters and professionals from leading companies. Furthermore, these events serve as a
+        platform to discover new technologies through workshops, demonstrations, and product showcases, keeping
+        attendees informed about the latest advancements. <br><br> Click on the images to register for conferences!
+      </p>
+    </div>
+  </div>
+
+
+  <script src="app.js"></script> <!-- Links to an external JavaScript file for additional functionality -->
+</body> <!-- Closes the body section -->
+
+</html> <!-- Closes the HTML document -->

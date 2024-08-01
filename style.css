@@ -1,0 +1,320 @@
+/*Kaibo Huang
+Date: 2024/06/03
+CSS File for the homepage
+
+Challenge Features: 
+- Utlize Javascript for some meaningful purpose (for the timeline)
+- Include an element that moves down as the user scrolls down
+*/
+
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Resetting default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+  /* Setting default font family */
+}
+
+/* Body styles */
+body {
+  /* Setting background image */
+  background-image: url("Images/ParallaxBackground.jpg");
+  background-attachment: fixed;
+  /* Fixed background */
+}
+
+/* Navigation styles */
+nav {
+  z-index: 1000;
+  /* Ensuring navigation is on top */
+  position: fixed;
+  /* Fixed position */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #000000;
+  /* Background color for navigation */
+}
+
+/* Link styles */
+nav a {
+  font-family: 'Poppins', sans-serif;
+  /* Using Google Font */
+}
+
+/* Logo styles */
+.logo {
+  color: rgb(226, 226, 226);
+  /* Logo color */
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+  padding-left: 30px;
+  /* Adding padding to the left */
+}
+
+/* Link within logo styles */
+.logo a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Hover effect for logo */
+.logo:hover h4 {
+  color: white;
+  /* Changing color on hover */
+}
+
+/* Navigation links styles */
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  /* Removing default list styling */
+}
+
+/* Individual navigation link styles */
+.nav-links li {
+  margin-right: 40px;
+  /* Adding margin between links */
+}
+
+/* Styling navigation links */
+.nav-links a {
+  color: rgb(226, 226, 226);
+  /* Link color */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Media query for responsive navigation */
+@media screen and (max-width: 1100px) {
+  body {
+    overflow-x: hidden;
+    /* Hiding horizontal overflow */
+  }
+
+  .nav-links {
+    position: absolute;
+    /* Absolute position for mobile view */
+    right: 0;
+    top: 8vh;
+    background-color: black;
+    /* Background color for mobile navigation */
+    display: flex;
+    flex-direction: column;
+    /* Displaying links vertically */
+    align-items: center;
+    /* Centering links */
+    width: 50%;
+    /* Setting width */
+    transform: translateX(100%);
+    /* Hiding links initially */
+  }
+
+  .nav-links li {
+    opacity: 0;
+    /* Hiding links initially */
+  }
+}
+
+/* Active state for navigation */
+.nav-active {
+  transform: translateX(0%);
+  /* Displaying links */
+}
+
+/* Hover effect for navigation links */
+.nav-links a:hover {
+  text-decoration: underline;
+  /* Underline effect */
+  color: #fff;
+  /* Changing color on hover */
+}
+
+/* Parallax section styles */
+.parallax {
+  height: 100vh;
+  /* Full height */
+  background-attachment: fixed;
+  /* Fixed background */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Quote styles */
+.quote {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Image within quote styles */
+.quote img {
+  width: 250px;
+  /* Adjusting image size */
+  height: auto;
+  border-radius: 50%;
+  /* Making image round */
+  margin-bottom: 20px;
+  /* Adding space between image and text */
+}
+
+/* Quote text styles */
+.quote h1 {
+  font-size: 27px;
+  line-height: 1.5;
+  max-width: 80%;
+  margin: 0 auto;
+  /* Centering the quote horizontally */
+}
+
+/* Workforce section styles */
+.workforce {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+/* Image within workforce section styles */
+.workforce-image {
+  position: relative;
+  width: 45%;
+  float: right;
+  /* Aligning image to the right */
+  margin-left: 20px;
+  /* Adding space between text and image */
+}
+
+/* Image within workforce section styles */
+.workforce-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Text content within workforce section styles */
+.workforce-content {
+  flex: 1;
+  padding-left: 50px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+/* Title within workforce section styles */
+.workforce h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Paragraph within workforce section styles */
+.workforce p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: white;
+}
+
+/* High School ECS section styles */
+.highSchoolECS {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+/* Title within High School ECS section styles */
+.highSchoolECS_Title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* Title text within High School ECS section styles */
+.highSchoolECS_Title h1 {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Container for rectangles within High School ECS section styles */
+.rectangles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+  /* Adding padding */
+  color: white;
+}
+
+/* Content styles */
+.content {
+  color: white;
+  padding: 20px;
+}
+
+/* Rectangle styles */
+.rectangle {
+  width: calc(20% - 40px);
+  /* Calculating width */
+  height: auto;
+  min-height: 70px;
+  /* Setting minimum height */
+  background-color: white;
+  /* Background color */
+  border-radius: 15px;
+  /* Adding border radius */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  /* Text color */
+  font-size: 18px;
+  /* Font size */
+  text-align: center;
+  padding: 10px;
+  /* Adding padding */
+  transition: box-shadow 0.3s ease;
+  /* Adding transition effect */
+}
+
+
+.rectangle:hover {
+  box-shadow: 0 0 0 5px white;
+  /* Add white outline on hover */
+}
+
+.section-reversed {
+  flex-direction: row-reverse;
+  /* Reverse the order of image and text */
+}
+
+.section-reversed .workforce-image {
+  float: left;
+  /* Align the image to the left */
+  margin-right: 20px;
+  /* Add space between the text and image */
+}
+
+.section-reversed .workforce-content {
+  padding-left: 0;
+  /* Reset padding */
+  padding-right: 50px;
+  /* Add space between the image and text */
+}

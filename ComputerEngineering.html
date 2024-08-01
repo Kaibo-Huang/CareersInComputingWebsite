@@ -1,0 +1,386 @@
+<!-- Kaibo Huang -->
+<!--Date: 2024/06/03 -->
+<!-- HTML File for Computer Engineering Webpage
+
+Challenge Features: 
+- Utlize Javascript for some meaningful purpose (for the timeline)
+- Include an element that moves down as the user scrolls down
+-->
+<!DOCTYPE html>
+<html lang="en"> <!-- Defines the document type and sets the language to English -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Ensures proper scaling on mobile devices -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Ensures compatibility with Internet Explorer -->
+  <link rel="stylesheet" href="Webpage_Style.css"> <!-- Links to the external CSS file for styling -->
+  <title>Careers In Computing</title> <!-- Sets the title of the webpage -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <!-- Includes Chart.js library -->
+</head>
+
+<body>
+  <div class="question-container"> <!-- Container for the question section -->
+    <header class="intro-header"> <!-- Header section with introduction -->
+      <h1>What is Computer Engineering?</h1> <!-- Main heading -->
+    </header>
+
+    <div class="question"> <!-- Container for the question content -->
+      <div class="video" style="margin-left: 100px; margin-top: 80px;">
+        <!-- Container for the video with inline styles for margin -->
+
+        <iframe width="672" height="400" src="https://www.youtube.com/embed/avZTQgLs064?si=5z3sf2Oh6qrj78s8"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- Embedded YouTube video with various attributes for functionality -->
+      </div>
+      <div class="definition"> <!-- Container for the definition text -->
+        <p>Computer engineering is a field that integrates elements of both computer science and electrical engineering
+          to design, develop, and manage computer systems and other computing devices. It encompasses a broad range of
+          topics including hardware, software, networking, and embedded systems. Computer engineers work on a variety of
+          projects, from designing microprocessors and circuit boards to developing software applications and creating
+          networks. They often collaborate closely with computer scientists and electrical engineers to solve complex
+          problems and innovate in the realm of computing technology.
+        </p> <!-- Paragraph describing computer engineering -->
+      </div>
+    </div>
+  </div>
+
+  <header class="question-header"> <!-- Header section for the education section -->
+    <h1>Education</h1> <!-- Main heading for education -->
+  </header>
+
+  <div class="row"> <!-- Container for the row layout -->
+    <div class="education-info"> <!-- Container for education information -->
+      <p>
+        Computer engineering typically requires a four-year university degree, providing a thorough education in both
+        hardware and software aspects of computing. This program combines core principles of electrical engineering with
+        foundational computer science topics, preparing students to design and build computer systems, embedded systems,
+        and networks.<br><br> 
+
+        University computer engineering programs cover a wide range of subjects, including digital logic, microprocessor
+        design, computer architecture, operating systems, and software engineering. The coursework is complemented by
+        practical experience through laboratory sessions, design projects, internships, and co-op programs. These
+        hands-on opportunities enable students to apply theoretical knowledge to solve real-world engineering problems
+        and develop critical problem-solving skills.<br><br> 
+
+        In addition to technical skills, these programs often include coursework in mathematics, physics, and
+        communication, ensuring graduates are well-rounded and can collaborate effectively in multidisciplinary teams.
+        Internships and co-op placements also provide valuable industry connections and can lead to job opportunities
+        after graduation.
+      </p> <!-- Paragraph describing education requirements and details for computer engineering -->
+    </div>
+
+    <div class="education-info"> <!-- Container for the images of education -->
+      <!-- Waterloo -->
+      <div class="img-container" style="margin-top: -50px;"> <!-- Container for Waterloo University image -->
+        <!-- Link to University of Waterloo -->
+        <a href="https://uwaterloo.ca/future-students/programs/computer-engineering" target="_blank">
+          <img src="Images/waterloo.png" alt="University of Waterloo" class="image" width="250" /> <!-- Image of Waterloo University -->
+          <div class="middle">
+            <div class="text">University of Waterloo</div> <!-- Text overlay for the image -->
+          </div>
+        </a>
+      </div>
+
+      <!-- University of Toronto -->
+      <div class="img-container" style="margin-top: -50px;"> <!-- Container for University of Toronto image -->
+        <!-- Link to University of Toronto -->
+        <a href="https://future.utoronto.ca/undergraduate-programs/computer-engineering/" target="_blank">
+          <img src="Images/UOfT.png" alt="University of Toronto" class="image" width="300" /> <!-- Image of University of Toronto -->
+          <div class="middle">
+            <div class="text">University of Toronto</div> <!-- Text overlay for the image -->
+          </div>
+        </a>
+      </div>
+
+      <!-- University of British Columbia -->
+      <div class="img-container" style="margin-top: -90px; margin-left: 30px;"> <!-- Container for UBC image -->
+        <!-- Link to University of British Columbia -->
+        <a href="https://engineering.ubc.ca/programs/undergraduate/computer-engineering" target="_blank">
+          <img src="Images/ubc.jpg" alt="University of British Columbia" class="image" width="180" /> <!-- Image of University of British Columbia -->
+          <div class="middle">
+            <div class="text">University of British Columbia</div> <!-- Text overlay for the image -->
+          </div>
+        </a>
+      </div>
+
+      <!-- Toronto Metropolitan University -->
+      <div class="img-container" style="margin-top: -90px;"> <!-- Container for TMU image -->
+        <!-- Link to Toronto Metropolitan University -->
+        <a href="https://www.torontomu.ca/programs/undergraduate/computer-engineering/" target="_blank">
+          <img src="Images/tmu.png" alt="Toronto Metropolitan University" class="image" width="400" /> <!-- Image of Toronto Metropolitan University -->
+          <div class="middle">
+            <div class="text">Toronto Metropolitan University</div> <!-- Text overlay for the image -->
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+
+  <header class="experience-header"> <!-- Header section for job experience -->
+    <h1>Job Experience</h1> <!-- Main heading for job experience -->
+  </header>
+
+  <div class="row"> <!-- Container for row layout -->
+    <div class="education-info"> <!-- Container for education information -->
+      <div class="img-container" style="margin-top: -200px;"> <!-- Container for image with inline style for margin -->
+        <a href="https://www.raspberrypi.org/courses/learn-python"> <!-- Link to Raspberry Pi Python course -->
+          <img src="Images/raspberry.png" alt="University of Waterloo" class="image" width="150" />
+          <!-- Raspberry Pi image with alt text and width -->
+        </a>
+      </div>
+      <div class="img-container"> <!-- Container for C++ image -->
+        <a href="https://devdocs.io/cpp/"> <!-- Link to C++ documentation -->
+          <img src="Images/cpp.png" alt="University of Toronto" class="image" width="225" />
+          <!-- C++ image with alt text and width -->
+        </a>
+      </div>
+      <div class="img-container"> <!-- Container for Tinkercad image -->
+        <a href="https://www.tinkercad.com/"> <!-- Link to Tinkercad -->
+          <img src="Images/tinkercad.png" alt="University of British Columbia" class="image" width="250" />
+          <!-- Tinkercad image with alt text and width -->
+        </a>
+      </div>
+      <div class="img-container" style="margin-top: -100px;">
+        <!-- Container for Python documentation image with inline style for margin -->
+        <a href="https://www.python.org/doc/"> <!-- Link to Python documentation -->
+          <img src="Images/py.png" alt="University of British Columbia" class="image" width="500" />
+          <!-- Python image with alt text and width -->
+        </a>
+      </div>
+    </div>
+
+    <div class="experience-info"> <!-- Container for experience information -->
+      <p>Gaining practical experience in computer engineering is fundamental for showcasing your proficiency in working
+        with both hardware and software in real-world contexts. While creating embedded systems projects, such as those
+        utilizing platforms like Arduino and Raspberry Pi, is an excellent method to gain this experience, there are
+        other valuable skills to acquire as well. For instance, learning about circuit design and PCB layout enables you
+        to understand how to create efficient and reliable hardware systems. <br><br>
+        Additionally, gaining proficiency in programming languages like C, C++, and Python allows you to develop
+        software that interacts seamlessly with
+        hardware components. Moreover, acquiring knowledge in areas such as digital signal processing, control systems,
+        and computer architecture provides a comprehensive understanding of how computers and electronic systems
+        function, further enhancing your capabilities as a computer engineer. Each new skill learned contributes to your
+        expertise and prepares you for tackling diverse projects and challenges in the field.<br><br>
+        Clicking on these images will direct you to some useful resources for further learning.
+      </p>
+    </div>
+  </div>
+
+  <header class="job-header" style="margin-top: -100px;">
+    <!-- Header section for featured career with inline style for margin -->
+    <h1>Featured Career - Software Engineer</h1> <!-- Main heading for featured career -->
+  </header>
+
+  <div class="job-info row"> <!-- Container for job information with row layout -->
+    <p> Software engineers play a crucial role in designing, developing, and maintaining software systems that drive
+      modern applications. They are responsible for writing, debugging, and optimizing code to create scalable and
+      efficient software solutions. This process requires proficiency in various programming languages and tools, such
+      as Java, Python, C++, and software development frameworks. Engineers often collaborate with cross-functional teams
+      to integrate different system components, ensuring seamless functionality and data exchange.
+      <br><br>
+      Beyond core development activities, software engineers are tasked with rigorous testing and code review to uphold
+      the quality and security of their software. This includes unit testing, integration testing, and employing
+      automated testing tools to detect and fix bugs and performance issues. Engineers use the insights gained from
+      these tests to refine and enhance their applications, ensuring they meet user needs and industry standards.
+      Additionally, they work on continuous integration and deployment (CI/CD) processes, facilitating regular updates
+      and iterations to adapt to evolving technological advancements and user requirements.
+    </p>
+
+    <div class="fullStack-container"> <!-- Container for full stack image -->
+      <img src="Images/SE.png" alt="Full Stack Image" class="fullStack">
+      <!-- Full stack image witha  alt text and class -->
+    </div>
+  </div>
+
+  <header class="job-header"> <!-- Header section for day in the life of a software engineer -->
+    <h1>Day In A Life of A Software Engineer</h1> <!-- Main heading for day in the life section -->
+  </header>
+
+  <ul class="timeline"> <!-- Unordered list for the timeline -->
+    <li style="--accent-color:#41516C"> <!-- List item with accent color for 8:00 am - 9:00 am -->
+      <div class="date">8:00 am - 9:00 am</div> <!-- Date div displaying the time range -->
+      <div class="title">Start of the Day</div> <!-- Title div for the event -->
+      <div class="descr">Begin the day by checking emails, responding to any urgent messages, and checking in with
+        interns to provide guidance and answer questions. Review project management tools to understand the day's tasks
+        and priorities, including updates on languages like Java, Python, or JavaScript.
+      </div> <!-- Description div for the event -->
+    </li>
+    <li style="--accent-color:#FBCA3E"> <!-- List item with accent color for 9:00 am - 10:00 am -->
+      <div class="date">9:00 am - 10:00 am</div> <!-- Date div displaying the time range -->
+      <div class="title">Team Meetings</div> <!-- Title div for the event -->
+      <div class="descr">Participate in daily stand-up meetings with the team to discuss progress on current projects,
+        identify any roadblocks, and coordinate tasks. Engage in project discussions to align on goals and timelines,
+        and collaborate on planning sessions for upcoming work, often focusing on languages like Java, Python, or C++.
+      </div> <!-- Description div for the event -->
+    </li>
+    <li style="--accent-color:#E24A68"> <!-- List item with accent color for 10:00 am - 11:00 am -->
+      <div class="date">10:00 am - 11:00 am</div> <!-- Date div displaying the time range -->
+      <div class="title">Coding Session #1</div> <!-- Title div for the event -->
+      <div class="descr">Focus on debugging and testing programs to ensure they are running smoothly and efficiently.
+        Address any bugs or issues found during testing and work on resolving open tickets using languages such as Java,
+        Python, or JavaScript. The length of this session can vary depending on the complexity of the issues.
+      </div> <!-- Description div for the event -->
+    </li>
+    <li style="--accent-color:#1B5F8C"> <!-- List item with accent color for 11:00 am - 12:00 pm -->
+      <div class="date">11:00 am - 12:00 pm</div> <!-- Date div displaying the time range -->
+      <div class="title">Development Work</div> <!-- Title div for the event -->
+      <div class="descr">Continue with core coding tasks, implementing new features, and refining existing code. Engage
+        in code reviews with peers to ensure code quality and adherence to best practices. Collaborate with team members
+        on integrating different components of the project, often utilizing languages like C++, Java, or Python.
+      </div> <!-- Description div for the event -->
+    </li>
+    <li style="--accent-color:#4CADAD"> <!-- List item with accent color for 12:00 pm - 1:00 pm -->
+      <div class="date">12:00 pm - 1:00 pm</div> <!-- Date div displaying the time range -->
+      <div class="title">Lunch Break</div> <!-- Title div for the event -->
+      <div class="descr">Take a break for lunch to recharge and relax. Use this time to step away from work and clear
+        your mind for the afternoon tasks.
+      </div> <!-- Description div for the event -->
+    </li>
+    <li style="--accent-color:#41516C"> <!-- List item with accent color for 12:30 pm - 2:30 pm -->
+      <div class="date">12:30 pm - 2:30 pm</div> <!-- Date div displaying the time range -->
+      <div class="title">Coding Session #2</div> <!-- Title div for the event -->
+      <div class="descr">Engage in deep work by focusing on more complex coding tasks and enhancements. Spend time
+        learning and integrating new software or frameworks that can improve project outcomes. Work on languages such as
+        JavaScript for front-end, Node.js for server-side, or Python for data-related tasks. This session typically
+        lasts 1-2 hours and involves both development and research.
+      </div> <!-- Description div for the event -->
+    </li>
+    <li style="--accent-color:#FBCA3E"> <!-- List item with accent color for 2:30 pm - 2:30 pm -->
+      <div class="date">2:30 pm - 2:30 pm</div> <!-- Date div displaying the time range -->
+      <div class="title">Break</div> <!-- Title div for the event -->
+      <div class="descr">Take a scheduled break to rest and recharge. Use this time to relax, stretch, or take a walk to
+        maintain productivity and focus for the remainder of the day.
+      </div> <!-- Description div for the event -->
+    </li>
+    <li style="--accent-color:#E24A68"> <!-- List item with accent color for 3:30 pm - 4:30 pm -->
+      <div class="date">3:30 pm - 4:30 pm</div> <!-- Date div displaying the time range -->
+      <div class="title">Self-Learning</div> <!-- Title div for the event -->
+      <div class="descr">Dedicate time to self-learning by engaging in courses or tutorials to stay updated with the
+        latest industry trends and technologies. Focus on enhancing skills in languages like Java, Python, JavaScript,
+        or learning new ones such as Go or Rust. This continuous learning helps in acquiring new skills and improving
+        existing ones, ensuring you remain competitive in the field.
+      </div> <!-- Description div for the event -->
+    </li>
+    <li style="--accent-color:#1B5F8C"> <!-- List item with accent color for 4:30 pm - 5:00 pm -->
+      <div class="date">4:30 pm - 5:00 pm</div> <!-- Date div displaying the time range -->
+      <div class="title">Wrap-Up and Documentation</div> <!-- Title div for the event -->
+      <div class="descr">Conclude the day by logging hours and documenting the day's work. Review the progress made,
+        note any important discoveries or issues encountered, and prepare for the next day's tasks. Ensure all work is
+        properly documented and any pending tasks are updated in the project management tools, with a focus on code
+        written in Java, Python, JavaScript, or other relevant languages used during the day.
+      </div> <!-- Description div for the event -->
+    </li>
+  </ul> <!-- Closing unordered list for the timeline -->
+
+  <header class="graph-header">
+    <h1>Average Salaries of Computer Engineering Careers</h1> <!-- Header for the chart -->
+  </header>
+
+  <div class="chart-box">
+    <canvas id="myChart"></canvas> <!-- Canvas element for the chart -->
+  </div>
+
+  <script>
+    const xValues = ["Hardware Engineer", "Embedded Systems Engineer", "FPGA Engineer", "VLSI Engineer", "Robotics Engineer"]; // Array of labels for the x-axis
+    const yValues = [83415, 87770, 86106, 70153, 72207]; // Array of data values for the y-axis
+    const barColors = ["#f94144", "#f3722c", "#f8961e", "#90be6d", "#43aa8b"]; // Array of colors for the bars in the chart
+
+    new Chart("myChart", { // Creating a new Chart object
+      type: "bar", // Type of chart (bar chart)
+      data: { // Data for the chart
+        labels: xValues, // X-axis labels
+        datasets: [{ // Dataset for the chart
+          backgroundColor: barColors, // Background color for the bars
+          data: yValues, // Data values for the bars
+          borderRadius: 5 // Rounded corners for the bars
+        }]
+      },
+      options: { // Options for configuring the chart
+        responsive: true, // Make the chart responsive
+        maintainAspectRatio: false, // Do not maintain aspect ratio
+        scales: { // Scales configuration
+          yAxes: [{ // Y-axis configuration
+            gridLines: { // Gridlines configuration
+              color: "rgba(255, 255, 255, 0.1)", // Color of gridlines
+              zeroLineColor: "rgba(255, 255, 255, 0.1)" // Color of zero line
+            },
+            ticks: { // Tick marks configuration
+              fontColor: "#ffffff", // Color of tick labels
+              beginAtZero: true // Start the y-axis at zero
+            }
+          }],
+          xAxes: [{ // X-axis configuration
+            gridLines: { // Gridlines configuration
+              color: "rgba(255, 255, 255, 0.1)" // Color of gridlines
+            },
+            ticks: { // Tick marks configuration
+              fontColor: "#ffffff" // Color of tick labels
+            }
+          }]
+        },
+        legend: {display: false}, // Hide the legend
+        title: { // Title configuration
+          display: true, // Display the title
+          fontColor: "#ffffff" // Color of the title
+        },
+        plugins: { // Plugin configuration
+          tooltip: { // Tooltip configuration
+            callbacks: { // Callbacks for tooltips
+              label: function (context) { // Custom label function for tooltips
+                console.log(context);
+                return '$' + (context.parsed.y); // Format the tooltip label
+              }
+            }
+          }
+        },
+        tooltips: { // Tooltips configuration
+          backgroundColor: "rgba(0, 0, 0, 0.7)", // Background color of tooltips
+          titleFontColor: "#ffffff", // Color of tooltip title
+          bodyFontColor: "#ffffff", // Color of tooltip body
+          cornerRadius: 5, // Corner radius of tooltips
+          displayColors: true // Display colored square for the dataset in the tooltip
+        }
+      }
+    });
+  </script>
+  <nav>
+    <div class="logo">
+      <h4><a href="index.html">Careers in Computing</a></h4> <!-- Logo with a link to the home page -->
+    </div>
+    <ul class="nav-links"> <!-- Unordered list for navigation links -->
+      <li style="margin-right: 40px"> <!-- List item for the "Home" link with right margin -->
+        <a href="index.html">Home</a> <!-- Link to the home page -->
+      </li>
+
+      <li>
+        <a href="ComputerScience.html">Computer Science</a> <!-- Link to Computer Science page -->
+      </li>
+
+      <li>
+        <a href="ComputerEngineering.html">Computer Engineering</a> <!-- Link to Computer Engineering page -->
+      </li>
+
+      <li>
+        <a href="InformationTechnology.html">Information Technology</a> <!-- Link to Information Technology page -->
+      </li>
+
+      <li style="margin: 0 10px;"> <!-- List item for the "Sources" link with left and right margin -->
+        <a href="Sources.html">Sources</a> <!-- Link to the Sources page -->
+      </li>
+    </ul>
+
+  </nav>
+
+  <script src="Webpage.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,357 @@
+<!-- Kaibo Huang -->
+<!--Date: 2024/06/03 -->
+<!-- HTML File for Computer Science Webpage
+
+Challenge Features: 
+- Utlize Javascript for some meaningful purpose (for the timeline)
+- Include an element that moves down as the user scrolls down
+-->
+
+<!DOCTYPE html> <!-- Specifies the document type and version of HTML -->
+<html lang="en"> <!-- Declares the language of the webpage content -->
+
+<head> <!-- The head section contains meta-information about the document -->
+  <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Sets the viewport to control layout on mobile browsers -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Ensures compatibility with older versions of Internet Explorer -->
+  <link rel="stylesheet" href="Webpage_Style.css"> <!-- Links to the external CSS stylesheet -->
+  <title>Careers In Computing</title> <!-- Sets the title of the webpage -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <!-- Links to the Chart.js library for creating charts -->
+
+
+</head>
+
+<body> <!-- The body section contains the content of the document -->
+  <div class="question-container"> <!-- Container for the question section -->
+    <header class="intro-header"> <!-- Header for the introduction section -->
+      <h1>What is Computer Science?</h1> <!-- Main heading -->
+    </header>
+
+    <div class="question"> <!-- Container for the question content -->
+      <div class="video"> <!-- Container for the video -->
+
+        <iframe width="672" height="378" src="https://www.youtube.com/embed/HsXaVV6fFDY?si=XOq_5qKcZWuhmL-i"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!-- Embedded YouTube video -->
+      </div>
+      <div class="definition"> <!-- Container for the definition text -->
+        <p>Computer science is the study of computation, algorithms, data structures, and the principles underlying the
+          design and function of computers. It encompasses both theoretical and practical aspects of computing,
+          including the development of software and hardware systems, programming languages, algorithms for solving
+          problems, and the analysis of complex systems.</p> <!-- Paragraph defining computer science -->
+      </div>
+    </div>
+  </div>
+
+  <header class="question-header"> <!-- Header for the education section -->
+    <h1>Education</h1> <!-- Main heading for the education section -->
+  </header>
+
+  <div class="row"> <!-- Container for the education content -->
+    <div class="education-info"> <!-- Container for the education information text -->
+      <p>
+        Most positions in the field of computer science require a four-year university degree, providing a solid
+        foundation in key principles like algorithms, data structures, software engineering, and computer
+        architecture.<br><br> Universities offer comprehensive computer science programs that cover both theoretical
+        concepts and practical application through projects, internships, co-op programs, and laboratory work. These
+        hands-on experiences allow students to apply classroom knowledge to real-world situations, building skills and a
+        portfolio that can impress potential employers. <br><br>Additionally, the professional connections made through
+        internships and co-op programs can often lead to job offers or other career opportunities upon
+        graduation.<br><br>
+        However, note that a degree is not always necessary to land a job in computer science. Many successful
+        programmers
+        and developers have pursued non-traditional education paths, such as coding bootcamps, self-study, or online
+        courses, to build their skills and gain employment in the tech industry. Employers often value hands-on
+        experience, demonstrated skills, and a strong portfolio just as much as formal education.
+      </p> <!-- Paragraph detailing the educational requirements and paths in computer science -->
+    </div>
+
+    <div class="education-info"> <!-- Container for the images of education -->
+      <!-- Waterloo -->
+      <div class="img-container" style="margin-top: -50px;"> <!-- Container for Waterloo University image -->
+        <a href="https://uwaterloo.ca/future-students/programs/computer-science" target="_blank"> <!-- Link to University of Waterloo -->
+          <img src="Images/waterloo.png" class="image" width="250" /> <!-- Image of Waterloo University -->
+          <div class="middle">
+            <div class="text">University of Waterloo</div> <!-- Text overlay for the image -->
+          </div>
+        </a>
+      </div>
+
+      <!-- University of Toronto -->
+      <div class="img-container" style="margin-top: -50px;"> <!-- Container for University of Toronto image -->
+        <a href="https://future.utoronto.ca/undergraduate-programs/computer-science/" target="_blank"> <!-- Link to University of Toronto -->
+          <img src="Images/UOfT.png" class="image" width="300" /> <!-- Image of University of Toronto -->
+          <div class="middle">
+            <div class="text">University of Toronto</div> <!-- Text overlay for the image -->
+          </div>
+        </a>
+      </div>
+
+      <!-- University of British Columbia -->
+      <div class="img-container" style="margin-top: -90px; margin-left: 30px;"> <!-- Container for UBC image -->
+        <a href="https://science.ubc.ca/students/programs/computer-science" target="_blank"> <!-- Link to University of British Columbia -->
+          <img src="Images/ubc.jpg" class="image" width="180" /> <!-- Image of University of British Columbia -->
+          <div class="middle">
+            <div class="text">University of British Columbia</div> <!-- Text overlay for the image -->
+          </div>
+        </a>
+      </div>
+
+      <!-- Toronto Metropolitan University -->
+      <div class="img-container" style="margin-top: -90px;"> <!-- Container for TMU image -->
+        <a href="https://www.torontomu.ca/programs/undergraduate/computer-science/" target="_blank"> <!-- Link to Toronto Metropolitan University -->
+          <img src="Images/tmu.png" class="image" width="400" /> <!-- Image of Toronto Metropolitan University -->
+          <div class="middle">
+            <div class="text">Toronto Metropolitan University</div> <!-- Text overlay for the image -->
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <header class="experience-header"> <!-- Header for the job experience section -->
+    <h1>Job Experience</h1> <!-- Main heading for the job experience section -->
+  </header>
+  <div class="row"> <!-- Container for the job experience content -->
+    <div class="education-info"> <!-- Container for job experience images and links -->
+
+      <div class="img-container"> <!-- Container for Harvard CS50 image and link -->
+        <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science">
+          <img src="Images/CS50.png" class="image" width="250" /> <!-- Image of Harvard CS50 course -->
+        </a>
+
+      </div>
+
+      <div class="img-container" style="margin-left: 100px;"> <!-- Container for freeCodeCamp image and link -->
+        <a href="https://www.freecodecamp.org/">
+          <img src="Images/freecodecamp.png" class="image" width="225" /> <!-- Image of freeCodeCamp -->
+        </a>
+
+      </div>
+
+      <div class="img-container"> <!-- Container for LeetCode image and link -->
+        <a href="https://leetcode.com/">
+          <img src="Images/Leetcode.png" class="image" width="225" /> <!-- Image of LeetCode -->
+        </a>
+
+      </div>
+
+      <div class="img-container"> <!-- Container for GeeksForGeeks image and link -->
+        <a href="https://www.geeksforgeeks.org/">
+          <img src="Images/GeeksForGeeks.png" class="image" style="height: 200px" /> <!-- Image of GeeksForGeeks -->
+        </a>
+
+      </div>
+    </div>
+    <div class="experience-info"> <!-- Container for job experience information text -->
+      <p>Experience is a critical factor in landing a job in computer science. While formal education provides the
+        theoretical framework, hands-on experience showcases your ability to turn knowledge into tangible outcomes.
+        Employers in this field seek candidates who possess practical skills and have familiarity with multiple
+        programming languages. They expect proficiency in various data structures and algorithms, as well as strong
+        problem-solving capabilities. <br><br> In contrast to some other professions, gaining programming experience
+        doesn't always require employment at a company. Although getting internships can help get you hired, many
+        aspiring computer scientists build personal projects, solve practice interview questions online, and enroll in
+        online courses to strengthen their skills. In fact, it is entirely possible to get a job in Computer Science. As
+        long as you are able to demonstrate competent skills and experience. You can get hired! <br><br>Clicking on any
+        of the icons on the right will direct you to
+        free resources where you can practice coding questions, take courses, and learn the syntax of different
+        programming languages.</p> <!-- Paragraph detailing the importance of job experience and how to gain it -->
+    </div>
+  </div>
+
+  <header class="job-header"> <!-- Header for the featured career section -->
+    <h1>Featured Career - Full Stack Developer</h1> <!-- Main heading for the featured career section -->
+  </header>
+
+  <div class="job-info row"> <!-- Container for the featured career content -->
+    <p> Full stack developers play a multifaceted role, with responsibilities spanning across the development
+      lifecycle.
+      They write, modify, integrate, and test code for both front-end and back-end components, ensuring that websites
+      and web applications are robust, efficient, and user-friendly. This process requires expertise in a range of
+      programming languages and frameworks, such as JavaScript, HTML/CSS, and backend technologies like Node.js or
+      Python. A significant part of their work involves integrating various systems and ensuring that data flows
+      seamlessly between the client-side and server-side.<br><br>In addition to core development tasks, full stack
+      developers are responsible for conducting tests and analyzing data to monitor the quality, security, and user
+      interface of their projects. This includes performing automated and manual tests to identify bugs, security
+      vulnerabilities, and areas for performance optimization. They then use this information to implement
+      improvements,
+      ensuring a smooth and secure user experience. Developers may also work on implementing procedures for ongoing
+      website revisions, allowing for flexibility and adaptability as technology and user expectations evolve.
+    </p> <!-- Paragraph detailing the role and responsibilities of a full stack developer -->
+
+    <div class="fullStack-container"> <!-- Container for the full stack developer image -->
+      <img src="Images/FullStack.jpg" class="fullStack"> <!-- Image representing full stack development -->
+
+    </div>
+  </div>
+
+  <header class="job-header"> <!-- Header for the day in the life section -->
+    <h1>Day In A Life of A Full Stack Developer</h1> <!-- Main heading for the day in the life section -->
+  </header>
+  <ul class="timeline"> <!-- Unordered list representing the timeline of a typical day -->
+    <li style="--accent-color:#41516C"> <!-- List item with a custom accent color -->
+      <div class="date">9:00 am - 9:30 am</div> <!-- Time slot -->
+      <div class="title">Morning Review and Planning</div> <!-- Activity title -->
+      <div class="descr">Start the day by checking emails, reviewing project management tools (like Jira or Trello), and
+        planning tasks for the day. This is also a good time to review any pull requests and catch up on code reviews.
+      </div> <!-- Description of the activity -->
+    </li>
+    <li style="--accent-color:#FBCA3E"> <!-- List item with a custom accent color -->
+      <div class="date">9:30 am - 10:00 am</div> <!-- Time slot -->
+      <div class="title">Daily Standup</div> <!-- Activity title -->
+      <div class="descr">Join a daily standup meeting with the team to discuss ongoing projects, identify any
+        roadblocks, and plan the day's work. This is a short and focused meeting where each team member reports what
+        they worked on yesterday, what they're working on today, and any issues they need help with.</div>
+      <!-- Description of the activity -->
+    </li>
+    <li style="--accent-color:#E24A68"> <!-- List item with a custom accent color -->
+      <div class="date">10:00 am - 12:00 pm</div> <!-- Time slot -->
+      <div class="title">Coding Session - Front-End Development</div> <!-- Activity title -->
+      <div class="descr">Dive into front-end development tasks, including implementing user interfaces, optimizing user
+        experience, and ensuring responsive design across devices.</div> <!-- Description of the activity -->
+    </li>
+    <li style="--accent-color:#1B5F8C"> <!-- List item with a custom accent color -->
+      <div class="date">12:00 pm - 1:00 pm</div> <!-- Time slot -->
+      <div class="title">Lunch Break</div> <!-- Activity title -->
+      <div class="descr">Take a break to recharge and refuel for the rest of the day.</div>
+      <!-- Description of the activity -->
+    </li>
+    <li style="--accent-color:#4CADAD"> <!-- List item with a custom accent color -->
+      <div class="date">1:00 pm - 3:00 pm</div> <!-- Time slot -->
+      <div class="title">Coding Session - Back-End Development</div> <!-- Activity title -->
+      <div class="descr">Focus on back-end development tasks, including database management, server-side logic
+        implementation, and API integrations.</div> <!-- Description of the activity -->
+    </li>
+    <li style="--accent-color:#41516C"> <!-- List item with a custom accent color -->
+      <div class="date">3:00 pm - 3:15 pm</div> <!-- Time slot -->
+      <div class="title">Break Time</div> <!-- Activity title -->
+      <div class="descr">Take a short break to stretch, relax, and recharge before continuing with tasks.</div>
+      <!-- Description of the activity -->
+    </li>
+    <li style="--accent-color:#FBCA3E"> <!-- List item with a custom accent color -->
+      <div class="date">3:15 pm - 4:30 pm</div> <!-- Time slot -->
+      <div class="title">Full Stack Development and Debugging</div> <!-- Activity title -->
+      <div class="descr">Work on full-stack development tasks, including integrating front-end and back-end components,
+        troubleshooting issues, and debugging code.</div> <!-- Description of the activity -->
+    </li>
+    <li style="--accent-color:#E24A68"> <!-- List item with a custom accent color -->
+      <div class="date">4:30 pm - 5:00 pm</div> <!-- Time slot -->
+      <div class="title">Coding Session - Code Review and Documentation</div> <!-- Activity title -->
+      <div class="descr">Conduct code reviews to ensure code quality, maintainability, and adherence to coding
+        standards. Document code changes, updates, and project progress for future reference.</div>
+      <!-- Description of the activity -->
+    </li>
+  </ul>
+
+  <header class="graph-header"> <!-- Header for the salary graph section -->
+    <h1>Average Salaries of Computer Science Careers</h1> <!-- Main heading for the salary graph section -->
+  </header>
+
+  <div class="chart-box"> <!-- Container for the chart -->
+    <canvas id="myChart"></canvas> <!-- Canvas element for the Chart.js chart -->
+  </div>
+
+  <script> <!-- JavaScript code for rendering the chart -->
+    const xValues = ["Full Stack Developer", "Data Scientist", "Machine Learning Engineer", "Cybersecurity Analyst", "Systems Analyst"]; // X-axis labels
+    const yValues = [82711, 102558, 113703, 81224, 75210]; // Y-axis values
+    const barColors = ["#f94144", "#f3722c", "#f8961e", "#90be6d", "#43aa8b"]; // Bar colors
+
+    new Chart("myChart", {
+      type: "bar",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues,
+          borderRadius: 5 // Rounded corners for a modern look
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          yAxes: [{
+            gridLines: {
+              color: "rgba(255, 255, 255, 0.1)", // Faint gridlines for a cleaner look
+              zeroLineColor: "rgba(255, 255, 255, 0.1)" // Faint zero line
+            },
+            ticks: {
+              fontColor: "#ffffff", // White tick labels
+              beginAtZero: true,
+
+            }
+          }],
+          xAxes: [{
+            gridLines: {
+              color: "rgba(255, 255, 255, 0.1)" // Faint gridlines
+            },
+            ticks: {
+              fontColor: "#ffffff" // White tick labels
+
+            }
+          }]
+        },
+
+        legend: {display: false}, // No legend for a cleaner look
+        title: {
+          display: true,
+          fontColor: "#ffffff" // White title
+        },
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: function (context) {
+                console.log(context)
+                return '$' + (context.parsed.y) // Format tooltip labels as currency
+              }
+            }
+          }
+        },
+        tooltips: {
+          backgroundColor: "rgba(0, 0, 0, 0.7)", // Dark background for tooltips
+          titleFontColor: "#ffffff", // White text in tooltips
+          bodyFontColor: "#ffffff", // White text in tooltips
+          cornerRadius: 5, // Rounded corners on tooltips
+          displayColors: true // Show the colored square for the dataset in the tooltip
+
+        }
+      }
+    });
+  </script>
+  <nav> <!-- Navigation bar -->
+    <div class="logo"> <!-- Container for the logo -->
+      <h4><a href="index.html">Careers in Computing</a></h4> <!-- Logo text linking to the home page -->
+    </div>
+    <ul class="nav-links"> <!-- Unordered list for navigation links -->
+      <li style="margin-right: 40px">
+        <a href="index.html">Home</a> <!-- Link to the home page -->
+      </li>
+
+      <li>
+        <a href="ComputerScience.html">Computer Science</a> <!-- Link to the computer science page -->
+      </li>
+
+      <li>
+        <a href="ComputerEngineering.html">Computer Engineering</a> <!-- Link to the computer engineering page -->
+      </li>
+
+      <li>
+        <a href="InformationTechnology.html">Information Technology</a> <!-- Link to the information technology page -->
+      </li>
+
+      <li style="margin: 0 10px;">
+        <a href="Sources.html">Sources</a> <!-- Link to the sources page -->
+      </li>
+    </ul>
+  </nav>
+
+  <script src="Webpage.js"></script>
+
+</body>
+
+</html> <!-- End of the HTML document -->
